@@ -1,0 +1,542 @@
+<!-- Sliders  ================================================================================================================ -->
+
+<!-- Swiper  -->
+<div class="slider__wrap">
+	<div class="slider__container _container">
+		<!-- Слайдер с техническим классом _swiper -->
+		<div class="slider _swiper d-flex">
+
+			<!-- Карточки слайдера с тех классом slider__slide -->
+			<div class="card-bg-item slider__slide">
+				<h2 class="card-bg-item__title title-block">Массаж</h2>
+				<p>
+					Антицеллюлитный, спортивный,
+					расслабляющий — выбери массаж на свой вкус
+				</p>
+			</div>
+			<div class="card-bg-item slider__slide">
+				<h2 class="card-bg-item__title title-block">RPM</h2>
+				<p>
+					Ежедневные велотренировки с ускорениями, подъемами и
+					спусками для всех уровней подготовки в самое удобное время.
+				</p>
+			</div>
+
+		</div>
+	</div>
+	<!-- Кнопки-стрлеки -->
+	<div class="swiper-button swiper-button-next"></div>
+	<div class="swiper-button swiper-button-prev"></div>
+</div>
+
+
+<!-- Галерея по типу Lightbox  -->
+<div class="gallery-block _gallery">
+	<a href="img/popup.jpg" class="gallery-block__item">
+		<img src="img/popup.jpg" alt="">
+	</a>
+	<a href="img/popup.jpg" class="gallery-block__item">
+		<img src="img/popup.jpg" alt="">
+	</a>
+	<a href="img/popup.jpg" class="gallery-block__item">
+		<img src="img/popup.jpg" alt="">
+	</a>
+</div>
+<!-- ========================================================================================================================== -->
+
+
+<!-- ФОРМЫ =================================================================================================================== -->
+<!-- Отправка формы Ajax  -->
+<form data-ajax="true" action="sendmail.php" method="POST" class="form">
+	<div class="form__line">
+		<label for="name" class="form__label">Поле Имя</label>
+		<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+		class="input _req">
+	</div>
+	<button type="submit" class="form__btn btn">Задать вопрос</button>
+</form>
+
+<!-- Форма отправки с плагином PHPMailer ===================================================================================== -->
+<div class="form">
+	<form action="#" id="form" class="form__body">
+		<h1 class="form__title">Отправда данных на почту</h1>
+		<div class="form__item">
+			<label for="formName" class="form__label">Имя*:</label>
+			<input id="formName" type="text" name="name" class="form__input _req">
+		</div>
+		<div class="form__item">
+			<label for="formEmail" class="form__label">E-mail*:</label>
+			<input id="formEmail" type="text" name="email" class="form__input _req _email">
+		</div>
+		<div class="form__item">
+			<div class="form__label">Левша или правша?</div>
+			<div class="options">
+				<div class="options__item">
+					<input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+					<label for="formRightHanded" class="options__label"><span>Правша</span></label>
+				</div>
+				<div class="options__item">
+					<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+					<label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+				</div>
+			</div>
+		</div>
+		<div class="form__item">
+			<label for="formMessage" class="form__label">Сообщение:</label>
+			<textarea name="message" id="formMessage" class="form__input"></textarea>
+		</div>
+		<div class="form__item">
+			<div class="form__label">Возраст:</div>
+			<select name="age" class="form__select">
+				<option value="от 18 до 25" selected>Молодой</option>
+				<option value="от 25 до 45">Старый</option>
+				<option value="от 45">Супер стар</option>
+			</select>
+		</div>
+		<div class="form__item">
+			<div class="form__label">Прикрепить фото</div>
+			<div class="file">
+				<div class="file__item">
+					<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+					<div class="file__button">Выбрать</div>
+				</div>
+				<div id="formPreview" class="file__preview"></div>
+			</div>
+		</div>
+		<div class="form__item">
+			<div class="checkbox">
+				<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+				<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных
+					данных в соответствии с <a href="">Условиями</a>*</span></label>
+				</div>
+			</div>
+			<button type="submit" class="form__button">Отправить</button>
+		</form>
+	</div>
+	<!-- Форма отправки с плагином PHPMailer END ======================================================================================================================== -->
+
+	<!-- Форма с инпутами. Валидация, фокус, маска  -->
+	<form action="#" class="form">
+		<div class="form__line">
+			<label for="name" class="form__label">Поле Имя</label>
+			<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Имя"
+			class="input _req">
+
+			<label for="tel" class="form__label">Поле Телефон, Ввод только цифр</label>
+			<input id="tel" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Только цифры телефона"
+			class="input _digital _req">
+
+			<label for="tel2" class="form__label">Поле Телефон, Маска телефона</label>
+			<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Маска телефона"
+			class="input _phone _req">
+
+			<label for="email" class="form__label">Поле Email, Только Email иначе ошибка</label>
+			<input id="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+			data-value="Только Email иначе ошибка" class="input _email _req">
+		</div>
+		<button type="submit" class="form__btn btn">Задать вопрос</button>
+	</form>
+
+
+	<!-- Селекты -->
+	<form action="#" class="form">
+		<div class="form__line">
+			<select name="form[]" class="form">
+				<option value="1" selected="selected">Пункт №1</option>
+				<option value="2">Пункт №2</option>
+				<option value="3">Пункт №3</option>
+				<option value="4">Пункт №4</option>
+				<option value="2">Пункт №5</option>
+				<option value="3">Пункт №6</option>
+			</select>
+		</div>
+	</form>
+
+
+	<!-- Строка поиска -->
+	<div class="header__search search">
+		<input type="text" placeholder="Поиск по сайту" class="search__input input">
+		<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
+	</div>
+	<button class="mob-search"></button>
+
+
+	<!-- Блок выбора колличества -->
+	<div class="form__line">
+		<div class="quantity">
+			<div class="quantity__button quantity__button_plus"></div>
+			<div class="quantity__input">
+				<input autocomplete="off" type="number" name="form[]" value="1">
+			</div>
+			<div class="quantity__button quantity__button_minus"></div>
+		</div>
+	</div>
+
+
+	<!-- Ползунок выбор цены -->
+	<div class="age_show">
+		Товары с ценой не выше <span id="price" class="price">100</span>$
+	</div>
+	<input type="range" id="age" value="100" min="100" max="1000" oninput="changePrice(this.value)"
+	onchange="changePrice(this.value)">
+
+
+	<!-- Чекбоксы -->
+	<div class="form__line">
+		<label for="check" class="checkbox">
+			<input id="check" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+			<span class="checkbox__text"><span>Я даю свое согласие на обработку персональных данных в соответствии с
+				<a href="">Условиями</a></span></span>
+			</label>
+		</div>
+
+
+		<!-- Радиокнопки -->
+		<div class="options">
+			<label class="options__item">
+				<input class="options__input" checked type="radio" value="1" name="form[option]">
+				<span class="options__text"><span>Text #1</span></span>
+			</label>
+			<label class="options__item">
+				<input class="options__input" type="radio" value="2" name="form[option]">
+				<span class="options__text"><span>Text #2</span></span>
+			</label>
+			<label class="options__item">
+				<input class="options__input" type="radio" value="3" name="form[option]">
+				<span class="options__text"><span>Text #3</span></span>
+			</label>
+		</div>
+
+
+		<!-- Переключатель -->
+		<input type="checkbox" id="toggle" class="offscreen" />
+		<label for="toggle" class="switch"></label>
+
+
+		<!-- Ползунки -->
+		<form action="#" class="form">
+			<div class="form__line">
+				<div class="price">
+					<div class="price__range"></div>
+					<div class="price__inputs">
+						<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
+						<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
+					</div>
+				</div>
+			</div>
+		</form>
+
+
+		<!-- Табы Табуляция Вкладки -->
+		<div class="tabs-block _tabs">
+			<nav class="tabs-block__nav">
+				<div class="tabs-block__navitem tab__navitem _tabs-item _active">Первая</div>
+				<div class="tabs-block__navitem tab__navitem _tabs-item">Вторая</div>
+			</nav>
+			<div class="tabs-block__items">
+				<div class="tabs-block__item tab__item _tabs-block _active">Описание 1</div>
+				<div class="tabs-block__item tab__item _tabs-block">Описание 2</div>
+			</div>
+		</div>
+
+
+		<!-- Спойлеры -->
+		<div class="spollers-block" data-spollers data-one-spoller>
+			<div class="spollers-block__item">
+				<div class="spollers-block__title" data-spoller>Открой меня 1</div>
+				<div class="spollers-block__body">
+					1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+			</div>
+
+			<div class="spollers-block__item">
+				<div class="spollers-block__title" data-spoller>Открой меня 2</div>
+				<div class="spollers-block__body">
+					2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+			</div>
+
+			<div class="spollers-block__item">
+				<div class="spollers-block__title" data-spoller>Открой меня 3</div>
+				<div class="spollers-block__body">
+					3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Рейтинг !!!Нет JS кода!!! -->
+		<form class="block__form form-block" action="#">
+			<div class="form-block__item">
+				<div class="rating-block">
+					<div class="rating edit">
+						<div class="rating__line"></div>
+						<div class="rating__activeline"></div>
+						<input value="4.3" type="hidden" name="rating" />
+						<div class="stars">
+							<span class="star"><i>Ужасно</i></span>
+							<span class="star"><i>Плохо</i></span>
+							<span class="star"><i>Нормально</i></span>
+							<span class="star"><i>Хорошо</i></span>
+							<span class="star"><i>Отлично</i></span>
+						</div>
+					</div>
+					<div class="rating__value">4.3</div>
+				</div>
+			</div>
+		</form>
+
+
+		<!-- Календарь с выбором даты -->
+		<form action="#" class="form">
+			<div class="form__line">
+				<label for="tel" class="form__label">Календарь</label>
+				<input id="tel" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Выберите дату"
+				class="input _date">
+			</div>
+		</form>
+
+
+		<!-- Подсказки при наведении -->
+		<a href="" class="_tippy btn">Подсказки при наведении</a>
+		<!-- ============================================================================================================================================ -->
+
+
+		<!-- КАРТОЧКИ ===================================================================================================================================== -->
+
+		<!-- Блок СоцСети -->
+		<div class="soc-block-icon">
+			<a href="#" class="soc-block-icon-link soc-icon-1"></a>
+			<a href="#" class="soc-block-icon-link soc-icon-2"></a>
+			<a href="#" class="soc-block-icon-link soc-icon-3"></a>
+			<a href="#" class="soc-block-icon-link soc-icon-4"></a>
+		</div>
+
+
+		<!-- Карточка с выбором колличества -->
+		<div class="selc-price">
+
+			<div class="selc-price__number">
+				<p class="selc-price__numer rub">39 008 </p>
+				<p class="selc-price__avail">На складе 12 штук</p>
+			</div>
+
+			<div class="selc-price__act">
+				<div class="selc-price__bascet d-flex">
+					<div class="number d-flex">
+						<span class="minus">-</span>
+						<input type="text" value="1" size="5" />
+						<span class="plus">+</span>
+					</div>
+					<a href="#" class="btn">В корзину</a>
+				</div>
+				<p class="selc-price___cheap tip" data-content="Нашли дешевле? Сделаем скидку.">Нашли дешевле</p>
+			</div>
+
+			<ul class="selc-price__char-list">
+				<li>Артикул: 1001701</li>
+				<li>Бренд: SLV</li>
+				<li>Страна бренда: ГЕРМАНИЯ</li>
+				<li>Коллекция: Forchini</li>
+				<li>Стиль: Современный</li>
+			</ul>
+			<a href="#" class="selc-price__char-link">Все характеристики</a>
+
+		</div>
+		<!-- ==================================================================================================================================================== -->
+
+		<!-- Информационные блоки с логотипами Стили в карточках-->
+		<div class="advant__row d-flex">
+
+			<div class="advant__item advant-icon-01">
+				<h4>Обширный <br>
+					каталог
+				</h4>
+				<p>
+					Безналичный расчет,
+					электронными деньгами,
+					наличными или картой при
+					курьерской доставке.
+				</p>
+			</div>
+
+			<div class="advant__item advant-icon-02">
+				<h4>Оплачивайте, <br>
+					как удобно вам
+				</h4>
+				<p>
+					Безналичный расчет,
+					электронными деньгами,
+					наличными или картой при
+					курьерской доставке.
+				</p>
+			</div>
+
+			<div class="advant__item advant-icon-03">
+				<h4>Простая система <br>
+					возврата и обмена
+				</h4>
+				<p>
+					Безналичный расчет,
+					электронными деньгами,
+					наличными или картой при
+					курьерской доставке.
+				</p>
+			</div>
+
+			<div class="advant__item advant-icon-04">
+				<h4>2 года <br>
+					гарантии
+				</h4>
+				<p>
+					Безналичный расчет,
+					электронными деньгами,
+					наличными или картой при
+					курьерской доставке.
+				</p>
+			</div>
+
+			<div class="advant__item advant-icon-05">
+				<h4>Шоу-рум <br>
+					у вас дома
+				</h4>
+				<p>
+					Безналичный расчет,
+					электронными деньгами,
+					наличными или картой при
+					курьерской доставке.
+				</p>
+			</div>
+
+		</div>
+		<!-- ==================================================================================================================================================== -->
+
+		<!-- Блок с косыми блоками внутри и картинкой -->
+		<div class="services__row d-flex">
+
+			<div class="services__item-block d-flex">
+				<div class="services__item-block-left">
+					<img src="img/services-1.jpg" alt="">
+				</div>
+				<div class="services__item-block-right services-color">
+					<div class="services__item-block-right-text">
+						<h3>
+							Персональные <br>
+							консультации
+						</h3>
+						<p>
+							Помогу вам в решении
+							личных проблем,
+							преодолении жизненных
+							трудностей и кризисов
+						</p>
+						<a href="#" class="services__item-btn btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="services__item-block d-flex">
+				<div class="services__item-block-left ibg">
+					<img src="img/services-2.jpg" alt="">
+				</div>
+				<div class="services__item-block-right services-color">
+					<div class="services__item-block-right-text">
+						<h3>
+							Консультации <br>
+							On-Line
+						</h3>
+						<p>
+							Помогу вам в решении
+							личных проблем,
+							преодолении жизненных
+							трудностей и кризисов
+						</p>
+						<a href="#" class="services__item-btn btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- ==================================================================================================================================================== -->
+
+		<!-- Стандартная карточка товаров -->
+		<div class="card__row d-flex">
+
+			<div class="card__column">
+				<div class="card__body d-flex">
+					<div class="card__img-inner">
+						<div class="card__img">
+							<img src="img/card/01.jpg" alt="">
+						</div>
+					</div>
+					<div class="card__text">
+						<h4 class="card__title">Кирпич строительный полнотелый одинарный М-200 гладкий Тульский №1</h4>
+						<p class="card__price">38 р. / шт</p>
+					</div>
+					<div class="card__btn d-flex">
+						<a href="#" class="card__btn-link btn">Подробнее</a>
+						<a href="#" class="card__btn-link btn">Заказать</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card__column">
+				<div class="card__body d-flex">
+					<div class="card__img-inner">
+						<div class="card__img">
+							<img src="img/card/01.jpg" alt="">
+						</div>
+					</div>
+					<div class="card__text">
+						<h4 class="card__title">Воротынский Строительный полнотелый рифлёный М-150</h4>
+						<p class="card__price">47 р. / шт.</p>
+					</div>
+					<div class="card__btn d-flex">
+						<a href="#" class="card__btn-link btn">Подробнее</a>
+						<a href="#" class="card__btn-link btn">Заказать</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card__column">
+				<div class="card__body d-flex">
+					<div class="card__img-inner">
+						<div class="card__img">
+							<img src="img/card/01.jpg" alt="">
+						</div>
+					</div>
+					<div class="card__text">
+						<h4 class="card__title">Полнотелый М-150 (Полохово, Тула)</h4>
+						<p class="card__price">21 р. / шт.</p>
+					</div>
+					<div class="card__btn d-flex">
+						<a href="#" class="card__btn-link btn">Подробнее</a>
+						<a href="#" class="card__btn-link btn">Заказать</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- ==================================================================================================================================================== -->
+
+		<!-- Карточки, показывают контент при наведении -->
+		<div class="card">
+			<img src="https://picsum.photos/id/404/367/267" />
+			<h3>Lorem ipsum</h3>
+			<div class="focus-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> <a href="#">Link to source</a>
+				</p>
+			</div> 
+		</div>
+		<!-- ==================================================================================================================================================== -->
+
+		<!-- Вращающаяся карта -->
+		<div class="card">
+			<div class="card-side front">
+				<div>Front Side</div>
+			</div>
+			<div class="card-side back">
+				<div>Back Side</div>
+			</div>
+		</div>
+<!-- ==================================================================================================================================================== -->
