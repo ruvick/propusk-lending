@@ -157,7 +157,7 @@ h4 {
 //@import "baguetteBox";
 // @import "fancybox.min";
 //@import "pagging";
-// @import "map";
+@import "map";
 // @import "slider";
 // @import "collection";
 @import "tippy";
@@ -176,7 +176,41 @@ h4 {
 }
 //===================================================================================================================================
 
+.map {
+  height: 600px;
+  &__container {
+    position: relative;
+  }
+  &__text-block {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    max-width: 393px;
+    width: 100%;
+    padding: 20px 36px;
+    text-align: center;
+    margin: auto;
+    z-index: 5000;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #e1e1e1;
+    opacity: 0.8;
+    box-shadow: 0px 40px 81px rgba(0, 0, 0, 0.33);
+  }
 
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 100;
+    color: #0F1720;
+  }
+}
 
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
