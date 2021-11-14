@@ -34,6 +34,11 @@
 	&:hover{}
 	&.fw{width: 100%;}  
 }
+.btn_dark {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #ffe800;
+}
 
 .button {
 	display: inline-flex;
