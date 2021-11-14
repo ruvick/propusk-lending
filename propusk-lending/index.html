@@ -22,7 +22,7 @@
   <div class="wrapper">
     <header id="header" class="header">
   <div class="header__container _container">
-    <div class="header__row d-flex">
+    <div class="header__navigation d-flex">
 
       <a href="index.html" class="logo-icon header__logo">
         <!-- <? bloginfo("url"); ?> -->
@@ -39,12 +39,12 @@
 						'container_class' => 'menu__list','container' => false )); ?>  -->
       <div class="header__contacts-wrap">
         <div class="contacts header__contacts d-flex">
-          <a href="tel:84951700000" class="contacts__phone header__phone">+7 (495) 123-02-86</a>
+          <a href="tel:+7 (495) 123-02-86" class="contacts__phone header__phone">+7 (495) 123-02-86</a>
           <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
           <a href="mailto:proverka@mail.ru" class="contacts__email header__email">proverka@mail.ru</a>
         </div>
         <a href="#callback" class="header__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
-        <a href="tel:84951700000" class="mob-phone-icon header__mob-phone-icon"></a>
+        <a href="tel:+7 (495) 123-02-86" class="mob-phone-icon header__mob-phone-icon"></a>
         <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
       </div>
 
@@ -147,44 +147,42 @@
 
     </main>
     <footer id="footer" class="footer">
-	<div class="footer__container _container">
+  <div class="footer__row">
+    <div class="footer__container _container">
 
-		<div class="footer__row d-flex">
+      <div class="footer__column d-flex">
+        <a href="index.html" class="logo-icon footer__logo">
+          <!-- <? bloginfo("url"); ?> -->
+          <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>
+        </a>
+        <div class="contacts footer__contact d-flex">
+          <a href="tel:+7 (495) 123-02-86" class="contacts__phone">+7 (495) 123-02-86</a>
+          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
+          <a href="mailto:proverka@mail.ru" class="contacts__email header__email">proverka@mail.ru</a>
+        </div>
+      </div>
 
-			<a href="index.html" class="logo-icon footer__logo">
-				<!-- <? bloginfo("url"); ?> -->
-				<p class="logo-icon__text">Название <span>текст logo</span></p>
-			</a>
+      <div class="footer__column footer__column_btn d-flex">
+        <p class="footer__column-text">
+          Оставьте заявку или позвоните по телефону,
+          чтобы получить бесплатную консультацию
+        </p>
+        <a href="#callback" class="footer__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
+      </div>
+    </div>
+  </div>
 
-			<ul class="footer__menu">
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Пункт 1</a></li> 
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Пункт 2</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Пункт 3</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Пункт 4</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Пункт 5</a></li>
-			</ul>
+  <div class="footer__row footer__row_bottom">
+    <div class="footer__container _container">
+      <div class="footer__column">
+        <p class="footer__copyright">© 2021, Пропуск в Москву</p>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
 
-			<div class="contacts footer__contact d-flex">
-				<a href="tel:84951700000" class="contacts__phone header__phone">8 (495) 170-00-00</a>
-				<!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-				<p class="contacts__time-phone header__time-phone">Звонить с 08:00 до 22:00</p>
-				<a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
-			</div>
-
-			<form class="footer__form" action="#">
-				<div class="form__line">
-					<h3 class="footer__form-title">Форма обратной связи</h3>
-					<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Ваше имя"
-					class="footer__form-input input _req">
-					<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Ваш телефон"
-					class="footer__form-input input _phone _req">
-				</div>
-				<button type="submit" class="footer__form-btn btn">Записаться на прием</button> 
-			</form>
-
-		</div>
-
-	</div>
 </footer>
   </div>
   <!-- Popup-с формой -->
