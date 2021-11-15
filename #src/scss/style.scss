@@ -29,6 +29,14 @@
 }
 
 @font-face {
+	font-family: 'Proxima-Nova-Bold-Black-Italic';
+	src: url('../fonts/Proxima-Nova-Bold-Black-Italic.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova-Bold-Black-Italic.otf') format('otf'), url('../fonts/Proxima-Nova-Bold-Black-Italic.woff') format('woff'), url('../fonts/Proxima-Nova-Bold-Black-Italic.ttf') format('truetype'), url('../fonts/Proxima-Nova-Bold-Black-Italic.svg') format('svg');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'Bahnschrift';
 	src: url('../fonts/Bahnschrift.eot');
 	src: local('☺'), url('../fonts/Bahnschrift.otf') format('otf'), url('../fonts/Bahnschrift.woff') format('woff'), url('../fonts/Bahnschrift.ttf') format('truetype'), url('../fonts/Bahnschrift.svg') format('svg');
@@ -368,6 +376,48 @@ h4 {
   height: 41px;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDUiIGhlaWdodD0iNDEiIHZpZXdCb3g9IjAgMCA0NSA0MSI+DQogIDxpbWFnZSBpZD0iaWNvbnM4LWPQvtC+0LHRidC10L3QuNC1LdC+0LHQu9Cw0YfQutC+LTY0IiB3aWR0aD0iNDUiIGhlaWdodD0iNDEiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQzBBQUFBcENBWUFBQUNoaTZDTUFBQUFCSE5DU1ZRSUNBZ0lmQWhraUFBQUJMWkpSRUZVV0VmTm1RbklWVVVVeC8yMHJHZ3hzbWkzejBLaHNpVExWbERMQ3JkU0ZLUWdWSUpvdFV5RDlvZ0VGYUhGOWtYSWhDZ1FMYkZjd2kwb3l6WlJLb08yTHloVHRNQjJiZlAzaTVrWWJ1OSs3M2FmZnU4ZStITm41czd5ZjNQUG5Ebm52SloxYlQ5M0tpbW5NNjRmT0JHY0RIcUNJOEVCTmViN2liWnZ3UmZnSS9BSitBQzhYMmJ0bHY5SnVwVkZ4b1B6d0ZuZ29ES0xoakUvOEZ3TDNnQnpRVnZSdVlxUzdzV0V0NE9oNElpY3lmK2tmUWZZQ2Y0SzZNeFRkQVg3Z0M0NVl6ZlR2aGpNQUovV0kxK1BkRGNtbUF4dUFwWlQrWnZLeDJFUlAvV0hZYmUyOGxUbmZnUDdndjNCWWFBVjlBR3FsSnR3RW1qSnpMbWQra1BnUVdDNXByUkh1ajhqSGdNK1UvbUt5cXRnYWNEdmVaTzMwNzQzNzRZQXY5d3djRnltN3p2VWJ3RHYxcG9qai9UbGRINEtISmdNMmtKNU9sZ0kya29RelJ2U3lvdVJRUFU3UE9uMEkrV3J3UXZaZ2JWSVgwdW54ek1kbjZGK0gvaDZONUxOVG5VTURmZUFxekl2NVBOazJwWWxQWWFYTDRLOVFpZFArRVRnNmU0b0djZENqNEJvbWY2Z1BCYThGQW1rcEkrblVSTjBhSGlwT293Q2IzY1UyMlNkc3ltL0RLSzZlTGcxc1YvYUo1TFdKTDBDTGtwMjJFT3lwZ21FNDVMblVsaVM3UGhybEM4Qk95UHBTNmw0d0tKY1R5R3IxODNncndWUlZhTEljNUdrdGFVYTl2UERtNVU4QnplRFljNmE4a201RFpmMFFCcDk0YzJsWEFCV1ZZaTBHN2c4OFBGQ0d5UnBiZTl0b1hFZHozT0ExM0ZWeE92ZnkrYlVRR2lhcEZWMmJ5ZmxBVENsS213VEh2SzZPZFFYUzNvRGxWTkNRMVVPWUhiZnJxTkJsMExaSU9uUEtKd1FHcTdrK1d3RmQzcEN3dXR6U2V1aG5SYUk2czA5WEVIU2FzQ2pnZGQ2U1d2dXZFZ1VYVUpkMGFySi9RbXZwWktlU3NOZFVWOTRlbDNxQzFkRnZLMTFKYUkyekpEMEFCcTB5OUZPWDBoNVJWVVl3Mk5RNENjbEk2TEJrdFlPNnB4RXMxZTFHMUdmSS9wRXF5a1BqYjZIaExYWFVYUkhvK0kzYzlPdllmRW5FZ0o2blFzamFWVmpQckJSTVQ3emNMN1ZSTVpuc3ZZeWNIRGdvTW9PQnp0U2Y5bzRUVmYwcU5ESlBNVm8wQXgvK2d4M05PSHlQV1VOaEhmS3YvNTAzRkM5cVVYQUNGb3hjdkUyZXI0RGQ5ejRWTGM0N3JDSDd6SXdMM0tvRlNQYXdWdFJselhLMHhUdUJlNytuaEx6S1hjRFk4STB0WEFqOWRTbi9zOU9SMExxODJ3UVZjVjJDZXNSTGdEZjdFYm14ekxYQ0hBbk9EcVo5eGZLZnVYbnNtdTFsL2ZvSFg3aHhabEI2cmhwTVQ5YldmSGdhOGEwV2tZanhxZXByS2ZpMWYxbXJRWHFaWmlNeWczcGJ3VXhvV0l5OFJCUUswbGpBbEs3NzhINUZYaWJtWkEwUU8wQjlDYTkyZHdRczAzWk5KbVpLWDBmciszdjhuYWtIdWs0VGxOajRLdHNDai9BMEQ2Vks2ak1CSjZGbU05VE4vM2hrdDhQbUZtcUpVYmJtcmRwWUdNZTJkaGVsTFFoZmJUWldkS1NjYkZKOVJiTHZIZFgzd05tVGVlQWY4eFpFU2xLMmpoeWRaaFEwbWFEak5mNkFzMlQ0WDU3b3FxWUdUVnZZZExTM2RRbExuVUhsQ0Z0QXJJVmFFODFSZDBUdGliSnpjbXA5NnFDNlY5MTM3bzJmeHRvMklNc1ExcHpwNkUzWUVqdDZSenFxa2h1aXJiTzF5ajh1Z3pwN09UYTB6dkFyTUtyTnRpeFVkTGFVMit3RG5Xc0dpR3RPdHdDY3UxcGd4dWFPN3dvYWFPYjE4TXNxb00rZ3JtSXBraFIwcWJLOUdmOVg4V2tZUHdCbFNhdC8yRTBNNkVaNnBEZG1WMGRyRklBYjdlaU9RQUFBQUJKUlU1RXJrSmdnZz09Ii8+DQo8L3N2Zz4NCg==');
 }
+//========================================================================================================================================================
+
+.order {
+  padding: 68px 0;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    // overflow: hidden;
+    margin-right: 10px;
+    &:last-child{margin:0px 0px 0px 0px;}
+  }
+
+  &__item-number {
+    font-family: 'Proxima-Nova-Bold-Black-Italic';
+    font-size: 103.88px;
+    line-height: 85px;
+    font-weight: 900;
+    opacity: 0.15;
+  }
+
+  &__item-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #A7A58D;
+    margin-left: -25px;
+  }
+}
+
+
+
+
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<Адаптив>===========================================================================================================================================
