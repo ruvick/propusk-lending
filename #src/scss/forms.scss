@@ -196,7 +196,7 @@ textarea {
 	width: 100%;
 	height: 28px;
 	padding: 0px 10px;
-  color: #fff;
+  // color: #fff;
 	// border-radius: 5px;
 	// border: 1px solid #000;
 	&._focus {
@@ -239,7 +239,11 @@ textarea.input {
 		opacity: 0;
 		visibility: hidden;
 		&:checked + .checkbox__text:before {
-			background: #fff url("../img/icons/check.svg") center no-repeat;
+			// background: #fff url("../img/icons/check.svg") center no-repeat;
+      // flex: 0 0 4px;
+      // height: 4px;
+      // border-radius: 50%;
+      // background: #ffe800;
 		}
 	}
 	// .checkbox__text
@@ -255,14 +259,14 @@ textarea.input {
 		&:before {
 			content: "";
 			align-self: flex-start;
-			margin: 0px 14px 0px 0px;
-			flex: 0 0 20px;
-			left: 0;
+			margin: 4px 14px 0px 0px;
 			top: 0;
-			width: 20px;
-			height: 18px;
-			background: #fff;
-			border: 1px solid #a7a9ac;
+			left: 0; 
+      flex: 0 0 12px;
+      height: 12px;
+      background: transparent;
+      border: 1px solid #2c3744;
+      border-radius: 50%;
 		}
 	}
 	a {

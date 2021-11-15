@@ -130,8 +130,71 @@
         </div>
       </section>
 
-      <section id="about" class="about">
+      <section id="examination" class="examination">
         <div class="_container">
+          <h2 class="examination__title title">Проверка пропуска</h2>
+
+          <form action="#" class="examination__form d-flex">
+            <div class="examination__form-znak-block d-flex">
+
+              <div class="goz-znak examination__goz-znak d-flex">
+                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"
+                  class="goz-znak__number input">
+                <div class="goz-znak__region d-flex">
+                  <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"
+                    class="goz-znak__region-input input _digital _req">
+                  <span class="goz-znak__region-icon"></span>
+                </div>
+              </div>
+
+              <p class="examination__form-znak-text">Введите государственный регистрационный знак ТС</p>
+            </div>
+            <div class="examination__form-btn d-flex">
+              <button type="reset" class="examination__form-btn-clear clear-btn"></button>
+              <button type="submit" class="examination__form-btn-button btn">ПРОВЕРИТЬ</button>
+            </div>
+          </form>
+
+          <div class="examination__mailing d-flex">
+            <div class="examination__mailing-column">
+              <h4 class="examination__mailing-title">Подключите круглосуточный контроль Вашего пропуска</h4>
+              <div class="examination__mailing-wrap d-flex">
+                <div class="examination__mailing-wrap-img">
+                  <img src="img/gerb.png" alt="">
+                </div>
+                <form action="#" class="examination__mailing-wrap-form d-flex">
+                  <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">
+                    <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"
+                      class="goz-znak__number input">
+                    <div class="goz-znak__region d-flex">
+                      <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"
+                        class="goz-znak__region-input input _digital _req">
+                      <span class="goz-znak__region-icon"></span>
+                    </div>
+                  </div>
+                  <button type="reset" class="clear-btn"></button>
+                </form>
+              </div>
+            </div>
+            <div class="examination__mailing-column">
+              <form action="#" class="examination__mailing-form">
+                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"
+                  class="examination__mailing-form-input">
+                <input autocomplete="off" type="text" name="form[]" data-error="Заполните поля*" data-value="Телефон*"
+                  class="examination__mailing-form-input">
+                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"
+                  class="examination__mailing-form-input">
+                <label for="check" class="examination__mailing-form-checkbox checkbox">
+                  <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"
+                    name="form[]">
+                  <span class="checkbox__text">
+                    <span>Я согласен(а) на обработку моих
+                      персональных данных</span></span>
+                </label>
+                <button class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
+              </form>
+            </div>
+          </div>
 
         </div>
       </section>
