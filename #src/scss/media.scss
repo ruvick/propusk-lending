@@ -166,6 +166,17 @@
     font-size: 14px;}
   .header__phone:before {
     display: none;}
+  .map {
+    padding: 0 !important;
+    height: 300px;}
+  .map__text-block {
+    top: 0;
+    max-width: 310px;
+    padding: 15px;}
+  .map__title {
+    margin-bottom: 5px !important;}
+  .map__subtitle {
+    font-size: 14px;}
 }
 
 @media (max-width: 700px) {
