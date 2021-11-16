@@ -413,24 +413,34 @@ textarea.input {
   opacity: 0;
   visibility: hidden;
 }
+.checkbox__input:checked + .checkbox__text .checkbox__cheked:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffe800;
+}
 .checkbox__text {
   display: inline-flex;
   align-items: center;
-  position: relative;
   font-size: 16px;
   color: #ffffff;
   letter-spacing: -0.3px;
   line-height: 1.25;
   cursor: pointer;
 }
-.checkbox__text:before {
-  content: "";
+.checkbox__cheked {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-self: flex-start;
-  margin: 4px 14px 0px 0px;
   top: 0;
   left: 0;
   flex: 0 0 12px;
   height: 12px;
+  margin: 4px 14px 0px 0px;
   background: transparent;
   border: 1px solid #2c3744;
   border-radius: 50%;
@@ -3053,6 +3063,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 30px;
   font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3em;
   line-height: 16.8px;
   padding: 5px;
   border-radius: 5px;
@@ -3062,7 +3074,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header__box-title {
   text-align: center;
   opacity: 0.7;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .header__box-inner {
   justify-content: space-between;
@@ -3086,6 +3098,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header__box-term {
   display: flex;
   justify-content: flex-end;
+  opacity: 0.7;
   margin-top: 10px;
 }
 
@@ -3100,7 +3113,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "";
   float: left;
   flex: 0 0 49px;
-  height: 49px;
+  height: 100%;
   margin-right: 7px;
   background-size: 100%;
   background-position: 0 0;
@@ -3110,7 +3123,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .logo-icon__text {
   font-family: "Bahnschrift";
   font-size: 18px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 .menu-list {
@@ -3412,7 +3425,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 18px;
   line-height: 21.6px;
   font-weight: 100;
-  text-align: right;
+  text-align: justify;
   margin-bottom: 30px;
 }
 .help__box {
@@ -3672,6 +3685,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .examination {
   padding: 68px 0 80px;
   background: #0f1720;
+  background-image: url("../img/propuska-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .examination__title {
   color: #fff;
@@ -3813,6 +3830,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 30px;
 }
 .examination__mailing-form-input {
   flex: 0 1 288px;
@@ -3830,6 +3848,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .examination__mailing-form-checkbox {
   flex: 0 1 288px;
+  margin-top: 20px;
 }
 .examination__mailing-form-btn {
   margin-top: 7px;

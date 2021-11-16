@@ -236,7 +236,7 @@ h4 {
     font-size: 18px;
     line-height: 21.6px;
     font-weight: 100;
-    text-align: right;
+    text-align: justify;
     margin-bottom: 30px;
   }
 
@@ -521,7 +521,11 @@ h4 {
 
 .examination {
   padding: 68px 0 80px;
-  background: #0f1720;;
+  background: #0f1720;
+  background-image: url('../img/propuska-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &__title {
     color: #fff;
   }
@@ -689,6 +693,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 30px;
   }
 
   &__mailing-form-input {
@@ -706,6 +711,7 @@ h4 {
 
   &__mailing-form-checkbox {
     flex: 0 1 288px;
+    margin-top: 20px;
   }
 
   &__mailing-form-btn {
