@@ -3952,6 +3952,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .header__contacts-wrap {
     flex: 0 0 360px;
   }
+
+  .advatages__card {
+    flex: 0 1 24%;
+    padding: 20px 23px;
+  }
 }
 @media (max-width: 860px) {
   .header__contacts-wrap {
@@ -4240,6 +4245,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-right: 10px;
     margin-bottom: 10px;
   }
+
+  .advatages__row {
+    flex-wrap: wrap;
+  }
+
+  .advatages__card {
+    flex: 0 1 49.5%;
+    flex-direction: row;
+    padding: 20px 23px;
+    margin-bottom: 10px;
+  }
+
+  .advatages__card-icon {
+    flex: 0 0 58px;
+    height: 58px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .advatages__card-text {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .advatages__card-icon::before {
+    background-position: 50%;
+    background-size: 65%;
+  }
 }
 @media (max-width: 700px) {
   .mob-menu {
@@ -4339,6 +4372,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .order__item {
     flex: 0 1 35%;
+  }
+
+  .advatages__card {
+    flex: 0 1 100%;
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .advatages__card-icon {
+    flex: 0 0 53px;
+    height: 53px;
+  }
+
+  .advatages__card-icon::before {
+    background-size: 60%;
   }
 }
 @media (max-width: 490px) {
