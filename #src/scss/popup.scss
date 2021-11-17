@@ -56,7 +56,7 @@
 		max-width: 800px;
 		width: 100%;
 		// padding: 50px;
-		background: #EBEFE2;
+		background: #0f1720;
 		transform: scale(0);
 		transition: all 0.3s ease 0s;
 		overflow: hidden;
@@ -85,27 +85,34 @@
 
 .popup__form-block h2 {
 	font-size: 36px;
+  color: #fff;
 	margin-bottom: 15px;
 }
 
 .popup__notific {
+  color: #fff;
 	margin-bottom: 35px;
 }
 
 .popup__form-input {
-	height: 46px;
-	background: #F6F8F1;
-	border: 1px solid #737373;;
-	margin-bottom: 25px;
+  height: 30px;
+  background: transparent;
+  border-bottom: 1px solid #737373;
+  margin-bottom: 15px;
 }
 
 .popup__policy {
+  color: #fff;
+  margin-top: 35px;
 	margin-bottom: 25px;
+  a {
+    color: #fff;
+  }
 }
 
 .popup__form-btn {
 	font-size: 18px;
-	min-width: 160px;
+	min-width: 200px;
 }
 //====================================================================================================
 
