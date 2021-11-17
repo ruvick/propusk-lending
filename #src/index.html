@@ -165,7 +165,7 @@
                 <form action="#" class="examination__mailing-wrap-form d-flex">
                   <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">
                     <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"
-                      class="goz-znak__number input">
+                      class="goz-znak__number input _req">
                     <div class="goz-znak__region d-flex">
                       <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"
                         class="goz-znak__region-input input _digital _req">
@@ -179,11 +179,11 @@
             <div class="examination__mailing-column">
               <form action="#" class="examination__mailing-form">
                 <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"
-                  class="examination__mailing-form-input">
-                <input autocomplete="off" type="text" name="form[]" data-error="Заполните поля*" data-value="Телефон*"
-                  class="examination__mailing-form-input">
+                  class="examination__mailing-form-input input">
+                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Телефон*"
+                  class="examination__mailing-form-input input _req">
                 <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"
-                  class="examination__mailing-form-input">
+                  class="examination__mailing-form-input input">
                 <label for="check" class="examination__mailing-form-checkbox checkbox">
                   <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"
                     name="form[]">
@@ -192,7 +192,7 @@
                     <span>Я согласен(а) на обработку моих
                       персональных данных</span></span>
                 </label>
-                <button class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
+                <button type="submit" class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
               </form>
             </div>
           </div>

@@ -374,10 +374,10 @@ textarea:focus {
   padding: 0px 10px;
 }
 .input._focus {
-  background: grey;
+  border-bottom: 1px solid #ffe800;
 }
 .input._error {
-  border: 1px solid red;
+  border-bottom: 1px solid red;
 }
 
 textarea.input {
@@ -3000,6 +3000,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .popup__form-input {
   height: 30px;
+  color: #fff;
   background: transparent;
   border-bottom: 1px solid #737373;
   margin-bottom: 15px;
