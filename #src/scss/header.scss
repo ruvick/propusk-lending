@@ -267,20 +267,21 @@
 	right: -100%;
   width: 50%;
   height: 100%;
-  padding: 35px 10px 0px 20px;
+  padding: 45px 10px 0px 20px;
 	// background: rgba(0, 0, 0, 0.8);
-	background: #fff;
+	background: #D6DEE7;
 	box-shadow: 0px 3px 5px 0px black;
-  -webkit-transition: right 0.8s;
-  -o-transition: right 0.8s;
+  -webkit-transition: right 0.7s;
+  -o-transition: right 0.7s;
 	margin-top: 30px;
-  transition: right 0.8s; 
+  transition: right 0.7s; 
   overflow: auto;}
 .mob-menu li a {
 	display: inline-block;
-	font-size: 16px;
-	// color: #fff;
-	padding-bottom: 13px;}  
+	font-size: 20px;
+	font-weight: 700;
+  opacity: 0.7;
+	padding-bottom: 20px;}  
 .mob-menu.active {
 	// visibility: visible;
   right: 0%; }
