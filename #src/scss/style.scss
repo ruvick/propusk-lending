@@ -318,6 +318,7 @@ h4 {
 
   &__row {
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -328,6 +329,7 @@ h4 {
     padding: 30px 33px;
     background: #fff;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   &__card-icon {

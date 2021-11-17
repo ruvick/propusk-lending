@@ -3016,7 +3016,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .popup__form-btn {
   font-size: 18px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 /*Popup-CSS*/
@@ -3041,6 +3041,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .header__box {
   position: relative;
+  display: flex;
+  flex-direction: column;
   flex: 0 1 27.333%;
   padding: 80px 30px 48px 30px;
   color: #fff;
@@ -3078,6 +3080,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 20px;
 }
 .header__box-title {
+  flex: 1 1 auto;
   text-align: center;
   opacity: 0.7;
   margin-bottom: 24px;
@@ -3280,7 +3283,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: -100%;
   width: 50%;
   height: 100%;
-  padding: 45px 10px 0px 20px;
+  padding: 45px 10px 65px 20px;
   background: #D6DEE7;
   box-shadow: 0px 3px 5px 0px black;
   -webkit-transition: right 0.7s;
@@ -3512,6 +3515,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .advatages__row {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .advatages__card {
   display: flex;
@@ -3521,6 +3525,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 30px 33px;
   background: #fff;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .advatages__card-icon {
   display: flex;
