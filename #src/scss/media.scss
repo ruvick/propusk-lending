@@ -375,9 +375,11 @@
     flex-wrap: wrap;}
   .examination__mailing-column {
     flex: 0 1 100%;
-    margin-right: 0;}
+    margin-right: 0;
+    margin-bottom: 25px;}
   .examination__mailing-column:last-child {
-    flex: 0 1 100%;}
+    flex: 0 1 100%;
+    margin-bottom: 0;}
   .examination__mailing-wrap {
     align-items: start;
     justify-content: space-between;}

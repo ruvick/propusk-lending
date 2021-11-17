@@ -4482,10 +4482,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .examination__mailing-column {
     flex: 0 1 100%;
     margin-right: 0;
+    margin-bottom: 25px;
   }
 
   .examination__mailing-column:last-child {
     flex: 0 1 100%;
+    margin-bottom: 0;
   }
 
   .examination__mailing-wrap {
