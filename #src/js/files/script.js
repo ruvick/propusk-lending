@@ -27,12 +27,12 @@ if (menuListItemElems) {
   });
 }
 
-// Строка поиска на мобилках 
-if (mobsearch) {
-  mobsearch.addEventListener("click", function () {
-    headsearch.classList.toggle("_active");
-  });
-}
+// // Строка поиска на мобилках 
+// if (mobsearch) {
+//   mobsearch.addEventListener("click", function () {
+//     headsearch.classList.toggle("_active");
+//   });
+// }
 
 // Закрытие моб меню при клике вне области меню 
 window.addEventListener('click', e => { // при клике в любом месте окна браузера
@@ -41,81 +41,81 @@ window.addEventListener('click', e => { // при клике в любом ме�
     iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
     menuBody.classList.remove('active')
     body.classList.remove('_lock')
-    headsearch.classList.remove('_active')
+    // headsearch.classList.remove('_active')
   }
 })
 
 // Плавная прокрутка
-const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+// const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
 
-smotScrollElems.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault()
-    console.log(event);
+// smotScrollElems.forEach(link => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault()
+//     console.log(event);
 
-    const id = link.getAttribute('href').substring(1)
-    console.log('id : ', id);
+//     const id = link.getAttribute('href').substring(1)
+//     console.log('id : ', id);
 
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth'
-    });
-  })
-});
+//     document.getElementById(id).scrollIntoView({
+//       behavior: 'smooth'
+//     });
+//   })
+// });
 
 
 // Полоса прокрутки в шапке
-const scrollProgress = document.getElementById('scroll-progress');
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+// const scrollProgress = document.getElementById('scroll-progress');
+// const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-window.addEventListener('scroll', () => {
-  const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-});
+// window.addEventListener('scroll', () => {
+//   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+//   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+// });
 
 
 // Ползунок выбора цены
-const priceEl = document.querySelector(".price");
+// const priceEl = document.querySelector(".price");
 
-function changePrice(price) {
-  priceEl.innerText = price;
-  console.log(price);
-};
+// function changePrice(price) {
+//   priceEl.innerText = price;
+//   console.log(price);
+// };
 
 
-// Подсказки
-tippy('._tippy', {
-  content: "Подсказка",
-});
+// // Подсказки
+// tippy('._tippy', {
+//   content: "Подсказка",
+// });
 
 
 // Поочередное открытие нескольких блоков меню, табы, либо что то еще
-const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
-const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
-const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
+// const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
+// const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
+// const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
 
-BarIconElems.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
+// BarIconElems.forEach((btn, index) => {
+//   btn.addEventListener('click', () => {
 
-    if (!btn.classList.contains('sidebar__menu-icon_active')) {
+//     if (!btn.classList.contains('sidebar__menu-icon_active')) {
 
-      BarSubMenuElems.forEach((BarSubMenuElem) => {
-        BarSubMenuElem.classList.remove('active')
-      });
-      BarIconElems.forEach((BarIconElem) => {
-        BarIconElem.classList.remove('sidebar__menu-icon_active')
-      });
-      BarLinkIconElems.forEach((BarLinkIconElem) => {
-        BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
-      });
+//       BarSubMenuElems.forEach((BarSubMenuElem) => {
+//         BarSubMenuElem.classList.remove('active')
+//       });
+//       BarIconElems.forEach((BarIconElem) => {
+//         BarIconElem.classList.remove('sidebar__menu-icon_active')
+//       });
+//       BarLinkIconElems.forEach((BarLinkIconElem) => {
+//         BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
+//       });
 
-      BarSubMenuElems[index].classList.add('active')
-      BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-      btn.classList.add('sidebar__menu-icon_active')
-    } else {
-      BarSubMenuElems[index].classList.remove('active')
-      BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-      btn.classList.remove('sidebar__menu-icon_active')
-    }
-  })
-})
+//       BarSubMenuElems[index].classList.add('active')
+//       BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+//       btn.classList.add('sidebar__menu-icon_active')
+//     } else {
+//       BarSubMenuElems[index].classList.remove('active')
+//       BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+//       btn.classList.remove('sidebar__menu-icon_active')
+//     }
+//   })
+// })
 
