@@ -1,507 +1,1 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
-	<!-- <link rel="stylesheet" href="css/fancybox.css"> -->
-	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
-	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
-	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
-	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header id="header" class="header">
-  <div class="header__container _container">
-    <div class="header__navigation d-flex">
-
-      <a href="index.html" class="logo-icon header__logo">
-        <!-- <? bloginfo("url"); ?> -->
-        <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>
-      </a>
-
-      <ul class="menu-list header__menu-list d-flex">
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Оформить пропуск</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Необходимые документы</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Проверить пропуск</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-      </ul>
-      <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
-      <div class="header__contacts-wrap">
-        <div class="contacts header__contacts d-flex">
-          <a href="tel:88004440274" class="contacts__phone header__phone">8 (800) 444-02-74</a>
-          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-          <a href="mailto:proverka@mail.ru" class="contacts__email header__email">proverka@mail.ru</a>
-        </div>
-        <a href="#callback" class="header__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
-        <a href="tel:88004440274" class="mob-phone-icon header__mob-phone-icon"></a>
-        <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
-      </div>
-
-      <div class="icon-menu" aria-label="Бургер меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </div>
-
-    <h1 class="header__title">ПРОПУСК В МОСКВУ ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h1>
-    <p class="header__subtitle">(помощь при оформлении)</p>
-
-    <div class="header__inner d-flex">
-      <div class="header__box">
-        <div class="header__box-nuar_blk nuar_blk"></div>
-        <div class="header__box-sale">АКЦИЯ</div>
-        <h3 class="header__box-title">Пропуск на МКАД</h3>
-        <div class="header__box-inner d-flex">
-          <div class="header__box-price">
-            <p class="header__box-price-new">14 999 руб.</p>
-            <p class="header__box-price-old">20 000 руб.</p>
-          </div>
-          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
-        </div>
-        <p class="header__box-term">на 1 год</p>
-      </div>
-      <div class="header__box">
-        <div class="header__box-nuar_blk nuar_blk"></div>
-        <!-- <div class="header__box-sale">АКЦИЯ</div> -->
-        <h3 class="header__box-title">Пропуск на ТТК</h3>
-        <div class="header__box-inner d-flex">
-          <div class="header__box-price">
-            <p class="header__box-price-new">11 999 руб.</p>
-          </div>
-          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
-        </div>
-        <p class="header__box-term">на 1 год</p>
-      </div>
-      <div class="header__box">
-        <div class="header__box-nuar_blk nuar_blk"></div>
-        <!-- <div class="header__box-sale">АКЦИЯ</div> -->
-        <h3 class="header__box-title">Пропуск на СК</h3>
-        <div class="header__box-inner d-flex">
-          <div class="header__box-price">
-            <p class="header__box-price-new">10 999 руб.</p>
-          </div>
-          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
-        </div>
-        <p class="header__box-term">на 1 год</p>
-      </div>
-    </div>
-
-
-  </div>
-</header>
-
-<!-- Мобильное меню -->
-<div class="mob-menu header__mob-menu">
-  <ul class="mob-menu__list">
-    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Оформить пропуск</a></li>
-    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Необходимые документы</a></li>
-    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Проверить пропуск</a></li>
-    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
-  </ul>
-  <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-  <a href="#callback" class="header__popup-link_mob _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
-</div>
-    <main class="page">
-
-      <section id="files" class="files">
-        <div class="files__substrate">
-          <img src="img/road.png" alt="">
-        </div>
-        <div class="_container">
-
-          <div class="files-help-box help__box d-flex">
-            <p class="help__box-text">А также оформление:</p>
-            <div class="help__box-list d-flex">
-
-              <div class="help__box-list-item">
-                <p class="help__box-list-item-text help__box-list-item-text_01">Лицензии на международные перевозки</p>
-              </div>
-
-              <div class="help__box-list-item">
-                <p class="help__box-list-item-text help__box-list-item-text_02">ОСАГО, КАСКО</p>
-              </div>
-
-              <div class="help__box-list-item">
-                <p class="help__box-list-item-text help__box-list-item-text_03">Техосмотра</p>
-              </div>
-
-              <div class="help__box-list-item">
-                <p class="help__box-list-item-text help__box-list-item-text_04">Разрешения на негабаритный груз</p>
-              </div>
-
-              <div class="help__box-list-item">
-                <p class="help__box-list-item-text help__box-list-item-text_05">Купли-продажи</p>
-              </div>
-
-            </div>
-          </div>
-
-          <h2 class="files__title title">Необходимые документы</h2>
-
-          <div class="files__row d-flex">
-
-            <div class="files__descp d-flex">
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Паспорт ТС</p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Свидетельство <br> о регистрации ТС</p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Диагностическая <br> карта</p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Водительское <br> удостоверение</p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Паспорт <br> собственника ТС <br>
-                  <span class="files__descp-subtext">(для физ.лиц)</span>
-                </p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Карточка <br> предприятия <br> <span class="files__descp-subtext">(для юр.
-                    лиц)</span></p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Договор лизинга <br> <span class="files__descp-subtext">(если ТС в
-                    лизинге)</span></p>
-              </div>
-
-              <div class="files__descp-item">
-                <p class="files__descp-text">Договор <br> перевозки <br> <span class="files__descp-subtext">(при
-                    наличии)</span></p>
-              </div>
-
-            </div>
-
-            <div class="files__flash">
-              <div class="files__flash-wrap">
-                <div class="files__flash-wrap-img">
-                  <img src="img/flash.png" alt="">
-                </div>
-              </div>
-              <p class="files__flash-text">
-                Организациям и Индивидуальным предпринимателям для оформления пропуска
-                необходимо предоставить ЭЦП (электронную цифровую подпись)
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section id="order" class="order">
-        <div class="_container">
-          <h2 class="order__title title">Порядок проведения работ</h2>
-          <div class="order__row d-flex">
-
-            <div class="order__item">
-              <p class="order__item-number">01</p>
-              <p class="order__item-text">Присылаете <br> документы</p>
-            </div>
-
-            <div class="order__item">
-              <p class="order__item-number">02</p>
-              <p class="order__item-text">Получаете <br> пропуск</p>
-            </div>
-
-            <div class="order__item">
-              <p class="order__item-number">03</p>
-              <p class="order__item-text">Проверяете <br> пропуск</p>
-            </div>
-
-            <div class="order__item">
-              <p class="order__item-number">04</p>
-              <p class="order__item-text">Оплачиваете <br> услугу</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="advatages" class="advatages">
-        <div class="_container">
-          <h2 class="advatages__title title">Наши преимущества</h2>
-
-          <div class="advatages__row d-flex">
-            <div class="advatages__card">
-              <div class="advatages__card-icon advatages__card-icon_01"></div>
-              <p class="advatages__card-text">Поможем оформить разовый пропуск всего за 24 часа</p>
-            </div>
-            <div class="advatages__card">
-              <div class="advatages__card-icon advatages__card-icon_02"></div>
-              <p class="advatages__card-text">Поможем бесплатно оформить разовый пропуск при заказе годового</p>
-            </div>
-            <div class="advatages__card">
-              <div class="advatages__card-icon advatages__card-icon_03"></div>
-              <p class="advatages__card-text">Оплата осуществляется по факту оказания услуги</p>
-            </div>
-            <div class="advatages__card">
-              <div class="advatages__card-icon advatages__card-icon_04"></div>
-              <p class="advatages__card-text">Бесплатное SMS информирование о статусе Вашего пропуска</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="examination" class="examination">
-        <div class="_container">
-          <h2 class="examination__title title">Проверка пропуска</h2>
-
-          <form action="#" class="examination__form d-flex">
-            <div class="examination__form-znak-block d-flex">
-
-              <div class="goz-znak examination__goz-znak d-flex">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"
-                  class="goz-znak__number input">
-                <div class="goz-znak__region d-flex">
-                  <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"
-                    class="goz-znak__region-input input _digital _req">
-                  <span class="goz-znak__region-icon"></span>
-                </div>
-              </div>
-
-              <p class="examination__form-znak-text">Введите государственный регистрационный знак ТС</p>
-            </div>
-            <div class="examination__form-btn d-flex">
-              <button type="reset" class="examination__form-btn-clear clear-btn"></button>
-              <button type="submit" class="examination__form-btn-button btn">ПРОВЕРИТЬ</button>
-            </div>
-          </form>
-
-          <div class="examination__mailing d-flex">
-            <div class="examination__mailing-column">
-              <h4 class="examination__mailing-title">Подключите круглосуточный контроль Вашего пропуска</h4>
-              <div class="examination__mailing-wrap d-flex">
-                <div class="examination__mailing-wrap-img">
-                  <img src="img/gerb.png" alt="">
-                </div>
-                <form action="#" class="examination__mailing-wrap-form d-flex">
-                  <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">
-                    <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"
-                      class="goz-znak__number input _req">
-                    <div class="goz-znak__region d-flex">
-                      <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"
-                        class="goz-znak__region-input input _digital _req">
-                      <span class="goz-znak__region-icon"></span>
-                    </div>
-                  </div>
-                  <button type="reset" class="clear-btn"></button>
-                </form>
-              </div>
-            </div>
-            <div class="examination__mailing-column">
-              <form action="#" class="examination__mailing-form">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"
-                  class="examination__mailing-form-input input">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Телефон*"
-                  class="examination__mailing-form-input input _req">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"
-                  class="examination__mailing-form-input input">
-                <label for="check" class="examination__mailing-form-checkbox checkbox">
-                  <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"
-                    name="form[]">
-                  <span class="checkbox__text">
-                    <span class="checkbox__cheked"></span>
-                    <span>Я согласен(а) на обработку моих
-                      персональных данных</span></span>
-                </label>
-                <button type="submit" class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="help" class="help">
-        <div class="help__container _container">
-          <h2 class="help__title title">Помощь и консультирование</h2>
-          <p class="help__subtitle">
-            Мы существуем на рынке с 2015 года и являемся надежным партнером в сфере оказания помощи для грузовых
-            транспортных средств.
-            За это время мы проконсультировали и помогли оформить пропуска для тысяч довольных клиентов, потому
-            действительно можем утверждать,
-            что вместе с нами Вы сможете получить разрешение для своего г рузового автомобиля на въезд в Москву со сто
-            процентной гарантией
-            положительного результата. Даже если перед этим Вы получили отказ.
-          </p>
-        </div>
-      </section>
-
-      <section id="map" class="map">
-        <div class="map__container _container">
-          <div class="map__text-block">
-            <h2 class="map__title title">Контакты</h2>
-            <p class="map__subtitle">Москва, ул. Ленинская, д. 310 стр. 1, оф. 420</p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-    <footer id="footer" class="footer">
-  <div class="footer__row">
-    <div class="footer__container _container">
-
-      <div class="footer__column d-flex">
-        <a href="index.html" class="logo-icon footer__logo">
-          <!-- <? bloginfo("url"); ?> -->
-          <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>
-        </a>
-        <div class="contacts footer__contact d-flex">
-          <a href="tel:88004440274" class="contacts__phone">8 (800) 444-02-74</a>
-          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
-          <a href="mailto:proverka@mail.ru" class="contacts__email">proverka@mail.ru</a>
-        </div>
-      </div>
-
-      <div class="footer__column footer__column_btn d-flex">
-        <p class="footer__column-text">
-          Оставьте заявку или позвоните по телефону,
-          чтобы получить бесплатную консультацию
-        </p>
-        <a href="#callback" class="footer__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer__row footer__row_bottom">
-    <div class="footer__container _container">
-      <!-- <div class="footer__column"> -->
-      <p class="footer__copyright">© 2021, Пропуск в Москву</p>
-      <!-- </div> -->
-      <!-- <div class="footer__column"> -->
-      <a href="#" class="footer__policy">Политика конфиденциальности</a>
-      <!-- </div> -->
-    </div>
-  </div>
-
-</footer>
-  </div>
-  <!-- Popup-с формой -->
-<div class="popup popup_callback">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__item d-flex">
-				<div class="popup__img">
-					<img src="img/popup.jpg" alt="">
-				</div>
-				<div class="popup__form-block">
-					<h2>Заказать звонок</h2>
-					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-					<form action="#" class="form">
-						<div class="form__line">
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
-								class="popup__form-input input _req">
-							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
-								class="popup__form-input input _phone _req">
-							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"
-								class="popup__form-input input _email _req">
-						</div>
-						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
-								конфиденциальности</a></p>
-						<button class="popup__form-btn form__btn btn">Заказать</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
-<!-- =============================================================================================================================== -->
-
-
-<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
-<!-- =============================================================================================================================== -->
-
-<!-- Popup-CSS -->
-<!-- <div id="popup-2" class="popup-2">
-	<a href="#" class="popup__area-2"></a>
-	<div class="popup__body-2">
-		<div class="popup__content-2">
-
-			<a href="#" class="popup__close-2">Close</a>
-			<div class="popup__title">Заказать ворота Дешево!</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-
-		</div>
-	</div>
-</div> -->
-<!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->
-  <!-- Swiper -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="ru"><head>	<title>Главная</title>	<meta charset="UTF-8">	<meta name="format-detection" content="telephone=no">	<link rel="stylesheet" href="css/style.min.css?_v=20211122105754">	<!-- <link rel="stylesheet" href="css/fancybox.css?_v=20211122105754"> -->	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">	<link rel="shortcut icon" href="favicon.ico">	<!-- <meta name="robots" content="noindex, nofollow"> -->	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->	<meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>  <div class="wrapper">    <header id="header" class="header">  <div class="header__container _container">    <div class="header__navigation d-flex">      <a href="index.html" class="logo-icon header__logo">        <!-- <? bloginfo("url"); ?> -->        <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>      </a>      <ul class="menu-list header__menu-list d-flex">        <li class="menu-list__item"><a href="#" class="menu-list__link">Оформить пропуск</a></li>        <li class="menu-list__item"><a href="#" class="menu-list__link">Необходимые документы</a></li>        <li class="menu-list__item"><a href="#" class="menu-list__link">Проверить пропуск</a></li>        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>      </ul>      <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',						'container_class' => 'menu__list','container' => false )); ?>  -->      <div class="header__contacts-wrap">        <div class="contacts header__contacts d-flex">          <a href="tel:88004440274" class="contacts__phone header__phone">8 (800) 444-02-74</a>          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->          <a href="mailto:proverka@mail.ru" class="contacts__email header__email">proverka@mail.ru</a>        </div>        <a href="#callback" class="header__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>        <a href="tel:88004440274" class="mob-phone-icon header__mob-phone-icon"></a>        <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->      </div>      <div class="icon-menu" aria-label="Бургер меню">        <span></span>        <span></span>        <span></span>      </div>    </div>    <h1 class="header__title">ПРОПУСК В МОСКВУ ДЛЯ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h1>    <p class="header__subtitle">(помощь при оформлении)</p>    <div class="header__inner d-flex">      <div class="header__box">        <div class="header__box-nuar_blk nuar_blk"></div>        <div class="header__box-sale">АКЦИЯ</div>        <h3 class="header__box-title">Пропуск на МКАД</h3>        <div class="header__box-inner d-flex">          <div class="header__box-price">            <p class="header__box-price-new">14 999 руб.</p>            <p class="header__box-price-old">20 000 руб.</p>          </div>          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>        </div>        <p class="header__box-term">на 1 год</p>      </div>      <div class="header__box">        <div class="header__box-nuar_blk nuar_blk"></div>        <!-- <div class="header__box-sale">АКЦИЯ</div> -->        <h3 class="header__box-title">Пропуск на ТТК</h3>        <div class="header__box-inner d-flex">          <div class="header__box-price">            <p class="header__box-price-new">11 999 руб.</p>          </div>          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>        </div>        <p class="header__box-term">на 1 год</p>      </div>      <div class="header__box">        <div class="header__box-nuar_blk nuar_blk"></div>        <!-- <div class="header__box-sale">АКЦИЯ</div> -->        <h3 class="header__box-title">Пропуск на СК</h3>        <div class="header__box-inner d-flex">          <div class="header__box-price">            <p class="header__box-price-new">10 999 руб.</p>          </div>          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>        </div>        <p class="header__box-term">на 1 год</p>      </div>    </div>  </div></header><!-- Мобильное меню --><div class="mob-menu header__mob-menu">  <ul class="mob-menu__list">    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Оформить пропуск</a></li>    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Необходимые документы</a></li>    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Проверить пропуск</a></li>    <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>  </ul>  <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',		'container_class' => 'mob-menu__list','container' => false )); ?>  -->  <a href="#callback" class="header__popup-link_mob _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a></div>    <main class="page">      <section id="files" class="files">        <div class="files__substrate">          <picture><source srcset="img/road.webp" type="image/webp"><img src="img/road.png?_v=1637567874665" alt=""></picture>        </div>        <div class="_container">          <div class="files-help-box help__box d-flex">            <p class="help__box-text">А также оформление:</p>            <div class="help__box-list d-flex">              <div class="help__box-list-item">                <p class="help__box-list-item-text help__box-list-item-text_01">Лицензии на международные перевозки</p>              </div>              <div class="help__box-list-item">                <p class="help__box-list-item-text help__box-list-item-text_02">ОСАГО, КАСКО</p>              </div>              <div class="help__box-list-item">                <p class="help__box-list-item-text help__box-list-item-text_03">Техосмотра</p>              </div>              <div class="help__box-list-item">                <p class="help__box-list-item-text help__box-list-item-text_04">Разрешения на негабаритный груз</p>              </div>              <div class="help__box-list-item">                <p class="help__box-list-item-text help__box-list-item-text_05">Купли-продажи</p>              </div>            </div>          </div>          <h2 class="files__title title">Необходимые документы</h2>          <div class="files__row d-flex">            <div class="files__descp d-flex">              <div class="files__descp-item">                <p class="files__descp-text">Паспорт ТС</p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Свидетельство <br> о регистрации ТС</p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Диагностическая <br> карта</p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Водительское <br> удостоверение</p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Паспорт <br> собственника ТС <br>                  <span class="files__descp-subtext">(для физ.лиц)</span>                </p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Карточка <br> предприятия <br> <span class="files__descp-subtext">(для юр.                    лиц)</span></p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Договор лизинга <br> <span class="files__descp-subtext">(если ТС в                    лизинге)</span></p>              </div>              <div class="files__descp-item">                <p class="files__descp-text">Договор <br> перевозки <br> <span class="files__descp-subtext">(при                    наличии)</span></p>              </div>            </div>            <div class="files__flash">              <div class="files__flash-wrap">                <div class="files__flash-wrap-img">                  <picture><source srcset="img/flash.webp" type="image/webp"><img src="img/flash.png?_v=1637567874665" alt=""></picture>                </div>              </div>              <p class="files__flash-text">                Организациям и Индивидуальным предпринимателям для оформления пропуска                необходимо предоставить ЭЦП (электронную цифровую подпись)              </p>            </div>          </div>        </div>      </section>      <section id="order" class="order">        <div class="_container">          <h2 class="order__title title">Порядок проведения работ</h2>          <div class="order__row d-flex">            <div class="order__item">              <p class="order__item-number">01</p>              <p class="order__item-text">Присылаете <br> документы</p>            </div>            <div class="order__item">              <p class="order__item-number">02</p>              <p class="order__item-text">Получаете <br> пропуск</p>            </div>            <div class="order__item">              <p class="order__item-number">03</p>              <p class="order__item-text">Проверяете <br> пропуск</p>            </div>            <div class="order__item">              <p class="order__item-number">04</p>              <p class="order__item-text">Оплачиваете <br> услугу</p>            </div>          </div>        </div>      </section>      <section id="advatages" class="advatages">        <div class="_container">          <h2 class="advatages__title title">Наши преимущества</h2>          <div class="advatages__row d-flex">            <div class="advatages__card">              <div class="advatages__card-icon advatages__card-icon_01"></div>              <p class="advatages__card-text">Поможем оформить разовый пропуск всего за 24 часа</p>            </div>            <div class="advatages__card">              <div class="advatages__card-icon advatages__card-icon_02"></div>              <p class="advatages__card-text">Поможем бесплатно оформить разовый пропуск при заказе годового</p>            </div>            <div class="advatages__card">              <div class="advatages__card-icon advatages__card-icon_03"></div>              <p class="advatages__card-text">Оплата осуществляется по факту оказания услуги</p>            </div>            <div class="advatages__card">              <div class="advatages__card-icon advatages__card-icon_04"></div>              <p class="advatages__card-text">Бесплатное SMS информирование о статусе Вашего пропуска</p>            </div>          </div>        </div>      </section>      <section id="examination" class="examination">        <div class="_container">          <h2 class="examination__title title">Проверка пропуска</h2>          <form action="#" class="examination__form d-flex">            <div class="examination__form-znak-block d-flex">              <div class="goz-znak examination__goz-znak d-flex">                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"                  class="goz-znak__number input">                <div class="goz-znak__region d-flex">                  <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"                    class="goz-znak__region-input input _digital _req">                  <span class="goz-znak__region-icon"></span>                </div>              </div>              <p class="examination__form-znak-text">Введите государственный регистрационный знак ТС</p>            </div>            <div class="examination__form-btn d-flex">              <button type="reset" class="examination__form-btn-clear clear-btn"></button>              <button type="submit" class="examination__form-btn-button btn">ПРОВЕРИТЬ</button>            </div>          </form>          <div class="examination__mailing d-flex">            <div class="examination__mailing-column">              <h4 class="examination__mailing-title">Подключите круглосуточный контроль Вашего пропуска</h4>              <div class="examination__mailing-wrap d-flex">                <div class="examination__mailing-wrap-img">                  <picture><source srcset="img/gerb.webp" type="image/webp"><img src="img/gerb.png?_v=1637567874665" alt=""></picture>                </div>                <form action="#" class="examination__mailing-wrap-form d-flex">                  <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">                    <input autocomplete="off" type="text" name="form[]" data-error="" data-value="А 000 АА"                      class="goz-znak__number input _req">                    <div class="goz-znak__region d-flex">                      <input autocomplete="off" type="text" name="form[]" data-error="" data-value="000"                        class="goz-znak__region-input input _digital _req">                      <span class="goz-znak__region-icon"></span>                    </div>                  </div>                  <button type="reset" class="clear-btn"></button>                </form>              </div>            </div>            <div class="examination__mailing-column">              <form action="#" class="examination__mailing-form">                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"                  class="examination__mailing-form-input input">                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Телефон*"                  class="examination__mailing-form-input input _req">                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"                  class="examination__mailing-form-input input">                <label for="check" class="examination__mailing-form-checkbox checkbox">                  <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"                    name="form[]">                  <span class="checkbox__text">                    <span class="checkbox__cheked"></span>                    <span>Я согласен(а) на обработку моих                      персональных данных</span></span>                </label>                <button type="submit" class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>              </form>            </div>          </div>        </div>      </section>      <section id="help" class="help">        <div class="help__container _container">          <h2 class="help__title title">Помощь и консультирование</h2>          <p class="help__subtitle">            Мы существуем на рынке с 2015 года и являемся надежным партнером в сфере оказания помощи для грузовых            транспортных средств.            За это время мы проконсультировали и помогли оформить пропуска для тысяч довольных клиентов, потому            действительно можем утверждать,            что вместе с нами Вы сможете получить разрешение для своего г рузового автомобиля на въезд в Москву со сто            процентной гарантией            положительного результата. Даже если перед этим Вы получили отказ.          </p>        </div>      </section>      <section id="map" class="map">        <div class="map__container _container">          <div class="map__text-block">            <h2 class="map__title title">Контакты</h2>            <p class="map__subtitle">Москва, ул. Ленинская, д. 310 стр. 1, оф. 420</p>          </div>        </div>      </section>    </main>    <footer id="footer" class="footer">  <div class="footer__row">    <div class="footer__container _container">      <div class="footer__column d-flex">        <a href="index.html" class="logo-icon footer__logo">          <!-- <? bloginfo("url"); ?> -->          <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>        </a>        <div class="contacts footer__contact d-flex">          <a href="tel:88004440274" class="contacts__phone">8 (800) 444-02-74</a>          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->          <a href="mailto:proverka@mail.ru" class="contacts__email">proverka@mail.ru</a>        </div>      </div>      <div class="footer__column footer__column_btn d-flex">        <p class="footer__column-text">          Оставьте заявку или позвоните по телефону,          чтобы получить бесплатную консультацию        </p>        <a href="#callback" class="footer__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>      </div>    </div>  </div>  <div class="footer__row footer__row_bottom">    <div class="footer__container _container">      <!-- <div class="footer__column"> -->      <p class="footer__copyright">© 2021, Пропуск в Москву</p>      <!-- </div> -->      <!-- <div class="footer__column"> -->      <a href="#" class="footer__policy">Политика конфиденциальности</a>      <!-- </div> -->    </div>  </div></footer>  </div>  <!-- Popup-с формой --><div class="popup popup_callback">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>			<div class="popup__item d-flex">				<div class="popup__img">					<picture><source srcset="img/popup.webp" type="image/webp"><img src="img/popup.jpg?_v=1637567874665" alt=""></picture>				</div>				<div class="popup__form-block">					<h2>Заказать звонок</h2>					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>					<form action="#" class="form">						<div class="form__line">							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"								class="popup__form-input input _req">							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"								class="popup__form-input input _phone _req">							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"								class="popup__form-input input _email _req">						</div>						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой								конфиденциальности</a></p>						<button class="popup__form-btn form__btn btn">Заказать</button>					</form>				</div>			</div>		</div>	</div></div><!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> --><!-- =============================================================================================================================== --><div class="popup popup_popup">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_massagename-message">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_video">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>			<div class="popup__video _video"></div>		</div>	</div></div><!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> --><!-- =============================================================================================================================== --><!-- Popup-CSS --><!-- <div id="popup-2" class="popup-2">	<a href="#" class="popup__area-2"></a>	<div class="popup__body-2">		<div class="popup__content-2">			<a href="#" class="popup__close-2">Close</a>			<div class="popup__title">Заказать ворота Дешево!</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>		</div>	</div></div> --><!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->  <!-- Swiper --><!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script><script src="js/vendors.min.js?_v=20211122105754"></script><script src="js/app.min.js?_v=20211122105754"></script></body></html>
