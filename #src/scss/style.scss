@@ -97,7 +97,7 @@ h1 {
 h2 {
 	font-size: 36px;
 	font-weight: 700;
-	line-height: 43.2 / 36 *100%;}
+	line-height: 43.2 / 36 *100%;} 
 h3 {
 	font-size: 24px;
 	font-weight: 700;
@@ -237,7 +237,7 @@ h4 {
     line-height: 21.6px;
     font-weight: 100;
     text-align: justify;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   &__box {
@@ -518,6 +518,12 @@ h4 {
     line-height: 20.4px;
     text-align: center;
   }
+}
+
+.files-help-box {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 45px;
 }
 //========================================================================================================================================================
 
