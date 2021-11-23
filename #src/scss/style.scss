@@ -429,8 +429,30 @@ h4 {
   flex-wrap: wrap;
 }
 .order .header__box {
+  position: relative;
   flex: 0 1 30.333%;
+  padding: 48px 30px;
   box-shadow: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover !important;
+}
+
+.order__inner .header__box-title,
+.order__inner .header__box-inner {
+  position: relative;
+  z-index: 5;
+  text-align: left;
+}
+
+.order-box-bg-1 {
+  background-image: url('../img/price/01.jpg');
+}
+.order-box-bg-2 {
+  background-image: url('../img/price/02.jpg');
+}
+.order-box-bg-3 {
+  background-image: url('../img/price/03.jpg');
 }
 //========================================================================================================================================================
 

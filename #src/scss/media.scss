@@ -18,6 +18,8 @@
     margin-right: 0;}  
   .files__substrate {
     top: 15%;}
+  .order .header__box {
+    flex: 0 1 31.333%;}
 }
 
 @media (max-width: 1150px) {
@@ -25,6 +27,8 @@
     flex-wrap: wrap;}
   .examination__mailing-wrap-img {
     margin-bottom: 10px;}
+  .order .header__box {
+    flex: 0 1 33.333%;}
 }
 
 @media (max-width: 1024px) {
@@ -130,6 +134,11 @@
     margin-right: 0;}
   .header__logo .logo-icon__text {
     display: none;}
+  .order .header__box {
+    flex: none;}
+  .order__inner {
+    margin-top: 0 !important;
+    margin-bottom: 30px;}
 }
 
 @media (max-width: 830px) {
@@ -338,6 +347,8 @@
     flex: 0 0 31.6%;}
   .files-help-box {
     margin-bottom: 25px;}
+  .order__inner {
+    margin-bottom: 15px;}
 }
 
 @media (max-width: 730px) {
@@ -521,4 +532,6 @@
 @media (max-width: 340px) {
   .header__popup-link_mob {
     width: 100%;}
+  .order .header__box {
+    flex: 0 0 100%;}
 }

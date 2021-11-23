@@ -656,9 +656,6 @@ textarea.input {
   height: 100%;
   background-color: #00000035;
 }
-.nuar_blk:hover {
-  background-color: #00000050;
-}
 
 .nuar_color {
   position: relative;
@@ -3654,8 +3651,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .order .header__box {
+  position: relative;
   flex: 0 1 30.333%;
+  padding: 48px 30px;
   box-shadow: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover !important;
+}
+
+.order__inner .header__box-title,
+.order__inner .header__box-inner {
+  position: relative;
+  z-index: 5;
+  text-align: left;
+}
+
+.order-box-bg-1 {
+  background-image: url("../img/price/01.jpg");
+}
+
+.order-box-bg-2 {
+  background-image: url("../img/price/02.jpg");
+}
+
+.order-box-bg-3 {
+  background-image: url("../img/price/03.jpg");
 }
 
 .files {
@@ -3968,6 +3989,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .files__substrate {
     top: 15%;
   }
+
+  .order .header__box {
+    flex: 0 1 31.333%;
+  }
 }
 @media (max-width: 1150px) {
   .examination__mailing-wrap {
@@ -3976,6 +4001,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .examination__mailing-wrap-img {
     margin-bottom: 10px;
+  }
+
+  .order .header__box {
+    flex: 0 1 33.333%;
   }
 }
 @media (max-width: 1024px) {
@@ -4142,6 +4171,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .header__logo .logo-icon__text {
     display: none;
+  }
+
+  .order .header__box {
+    flex: none;
+  }
+
+  .order__inner {
+    margin-top: 0 !important;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 830px) {
@@ -4497,6 +4535,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .files-help-box {
     margin-bottom: 25px;
   }
+
+  .order__inner {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 730px) {
   .header__box {
@@ -4775,5 +4817,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (max-width: 340px) {
   .header__popup-link_mob {
     width: 100%;
+  }
+
+  .order .header__box {
+    flex: 0 0 100%;
   }
 }
