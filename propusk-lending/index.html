@@ -286,7 +286,7 @@
 
           </div>
           <div class="registration-btn">
-            <a href="#callback" class="registration-btn-link btn _popup-link">Оформить пропуск</a>
+            <a href="#arrange" class="registration-btn-link btn _popup-link">Оформить пропуск</a>
           </div>
         </div>
       </section>
@@ -399,7 +399,7 @@
             положительного результата. Даже если перед этим Вы получили отказ.
           </p>
           <div class="registration-btn">
-            <a href="#callback" class="registration-btn-link btn _popup-link">Оформить пропуск</a>
+            <a href="#arrange" class="registration-btn-link btn _popup-link">Оформить пропуск</a>
           </div>
         </div>
       </section>
@@ -460,64 +460,127 @@
   </div>
   <!-- Popup-с формой -->
 <div class="popup popup_callback">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__item d-flex">
-				<div class="popup__img">
-					<img src="img/popup.jpg" alt="">
-				</div>
-				<div class="popup__form-block">
-					<h2>Заказать звонок</h2>
-					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-					<form action="#" class="form">
-						<div class="form__line">
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
-								class="popup__form-input input _req">
-							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
-								class="popup__form-input input _phone _req">
-							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"
-								class="popup__form-input input _email _req">
-						</div>
-						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
-								конфиденциальности</a></p>
-						<button class="popup__form-btn form__btn btn">Заказать</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close" aria-label="Закрыть модальное окно"></div>
+      <div class="popup__item d-flex">
+        <div class="popup__img">
+          <img src="img/popup.jpg" alt="">
+        </div>
+        <div class="popup__form-block">
+          <h2>Заказать звонок</h2>
+          <p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
+          <form action="#" class="form">
+            <div class="form__line">
+              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
+                class="popup__form-input input _req">
+              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+                data-value="Телефон" class="popup__form-input input _phone _req">
+              <input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+                data-value="Email" class="popup__form-input input _email _req">
+            </div>
+            <p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
+                конфиденциальности</a></p>
+            <button class="popup__form-btn form__btn btn">Заказать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
 <!-- =============================================================================================================================== -->
 
+<div class="popup popup-arrange popup_arrange">
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close" aria-label="Закрыть модальное окно"></div>
+      <div class="popup__item d-flex">
+        <div class="popup__form-block popup-arrange__form-block">
+          <h2>Информация о пропусках</h2>
+          <div class="popup-arrange__table d-flex">
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Номер</div>
+              <div class="popup-arrange__table-column-text">КА209МА790</div>
+              <div class="popup-arrange__table-column-text">КА209МА790</div>
+            </div>
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Тип пропуска</div>
+              <div class="popup-arrange__table-column-text">ТТК(Ночной)</div>
+              <div class="popup-arrange__table-column-text">ТТК(Дневной)</div>
+            </div>
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Серия</div>
+              <div class="popup-arrange__table-column-text">БА 0887605</div>
+              <div class="popup-arrange__table-column-text">БА 0888221</div>
+            </div>
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Дата начала действия</div>
+              <div class="popup-arrange__table-column-text">12.11.2021</div>
+              <div class="popup-arrange__table-column-text">12.11.2021</div>
+            </div>
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Дата окончания</div>
+              <div class="popup-arrange__table-column-text">10.11.2022</div>
+              <div class="popup-arrange__table-column-text">12.10.2022</div>
+            </div>
+            <div class="popup-arrange__table-column">
+              <div class="popup-arrange__table-column-name">Осталось дней</div>
+              <div class="popup-arrange__table-column-text">322</div>
+              <div class="popup-arrange__table-column-text">322</div>
+            </div>
+          </div>
+          <h2>Спецпредложение!</h2>
+          <p class="popup__notific">
+            Постоянный пропуск за 14 000р. Гарантия получения 100%. Оставьте заявку до 24 ноября
+            и получите временный пропуск бесплатно
+          </p>
+          <form action="#" class="form">
+            <div class="form__line">
+              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+                data-value="Номер" class="popup__form-input input">
+              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+                data-value="Ваше Имя" class="popup__form-input input _req">
+              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+                data-value="Введите телефон" class="popup__form-input input _phone _req">
+            </div>
+            <button class="popup-arrange__form-btn popup__form-btn form__btn btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <a href="#arrange" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
+<!-- =============================================================================================================================== -->
 
 <div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close" aria-label="Закрыть модальное окно"></div>
+    </div>
+  </div>
 </div>
 <!-- =============================================================================================================================== -->
 
 <div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close" aria-label="Закрыть модальное окно"></div>
+    </div>
+  </div>
 </div>
 <!-- =============================================================================================================================== -->
 
 <div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
+      <div class="popup__video _video"></div>
+    </div>
+  </div>
 </div>
 <!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
 <!-- =============================================================================================================================== -->

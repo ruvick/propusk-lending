@@ -115,6 +115,41 @@
 	font-size: 18px;
 	min-width: 250px;
 }
+
+.popup-arrange__form-block {
+	flex: 0 1 100%;
+}
+.popup-arrange__form-btn {
+  margin-top: 25px;
+}
+
+.popup-arrange {
+
+  &__table {
+    margin-bottom: 35px;
+  }
+
+  &__table-column {
+    color: #fff;
+    border-right: 1px solid #fff;
+    &:last-child{border-right: none;}
+  }
+
+  &__table-column-name {
+    text-align: center;
+    padding: 5px 10px;
+    background: grey;
+  }
+
+  &__table-column-text {
+    padding: 5px 10px;
+    border-top: 1px solid #fff;
+    background: green;
+  }
+}
+.popup-arrange .popup__body {
+  max-width: 880px;}
+
 //====================================================================================================
 
 /*Popup-CSS*/

@@ -3020,6 +3020,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   min-width: 250px;
 }
 
+.popup-arrange__form-block {
+  flex: 0 1 100%;
+}
+
+.popup-arrange__form-btn {
+  margin-top: 25px;
+}
+
+.popup-arrange__table {
+  margin-bottom: 35px;
+}
+.popup-arrange__table-column {
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.popup-arrange__table-column:last-child {
+  border-right: none;
+}
+.popup-arrange__table-column-name {
+  text-align: center;
+  padding: 5px 10px;
+  background: grey;
+}
+.popup-arrange__table-column-text {
+  padding: 5px 10px;
+  border-top: 1px solid #fff;
+  background: green;
+}
+
+.popup-arrange .popup__body {
+  max-width: 880px;
+}
+
 /*Popup-CSS*/
 .header {
   position: relative;
