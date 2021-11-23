@@ -194,10 +194,9 @@ h4 {
     top: 30px;
     left: 0;
     right: 0;
-    max-width: 393px;
+    max-width: 430px;
     width: 100%;
     padding: 20px 36px;
-    text-align: center;
     margin: auto;
     z-index: 5000;
     overflow: hidden;
@@ -209,14 +208,21 @@ h4 {
   }
 
   &__title {
-    margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
-  &__subtitle {
+  &__list {
+
+  }
+
+  &__list-item {
     font-size: 16px;
     line-height: 19.2px;
     font-weight: 100;
     color: #0F1720;
+    margin-bottom: 5px;
+    &:last-child{margin:0px 0px 0px 0px;}
   }
 }
 //========================================================================================================================================================
