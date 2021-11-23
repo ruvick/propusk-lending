@@ -3029,6 +3029,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .popup-arrange__table {
+  flex-wrap: wrap;
   margin-bottom: 35px;
 }
 .popup-arrange__table-column {
@@ -3642,6 +3643,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 700;
   color: #A7A58D;
   margin-left: -38px;
+}
+
+.order__inner {
+  padding: 0;
+}
+
+.order__inner .header__box-inner {
+  flex-wrap: wrap;
+}
+
+.order .header__box {
+  flex: 0 1 30.333%;
+  box-shadow: none;
 }
 
 .files {

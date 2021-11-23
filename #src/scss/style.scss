@@ -421,6 +421,17 @@ h4 {
     margin-left: -38px;
   }
 }
+
+.order__inner {
+  padding: 0;
+}
+.order__inner .header__box-inner {
+  flex-wrap: wrap;
+}
+.order .header__box {
+  flex: 0 1 30.333%;
+  box-shadow: none;
+}
 //========================================================================================================================================================
 
 .files {
