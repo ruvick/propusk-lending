@@ -442,7 +442,12 @@ h4 {
 .order__inner .header__box-inner {
   position: relative;
   z-index: 5;
+  opacity: 1;
   text-align: left;
+}
+
+.order__box-nuar_blk {
+  background-color: #00000075;
 }
 
 .order-box-bg-1 {
