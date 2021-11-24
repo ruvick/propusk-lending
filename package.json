@@ -5,6 +5,10 @@
 	"author": "ruvick",
 	"private": true,
 	"license": "GNU General Public License (GPL)",
+	"scripts": {
+		"send_to_host": "cd propusk-lending && scp -C -r * propusw6_asmi@propusw6.beget.tech:propuskmkad-pro.ru/public_html",
+		"deploy": "gulp build && npm run send_to_host"
+	},
 	"devDependencies": {
 		"browser-sync": "latest",
 		"del": "latest",
