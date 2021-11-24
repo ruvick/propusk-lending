@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Страница благодарности"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('_header-thank-you.html',{})
+    <main class="page">
+
+      <section id="help" class="help">
+        <div class="help__container _container">
+          <h2 class="help__title title">Помощь и консультирование</h2>
+          <p class="help__subtitle">
+            Мы существуем на рынке с 2015 года и являемся надежным партнером в сфере оказания помощи для грузовых
+            транспортных средств.
+            За это время мы проконсультировали и помогли оформить пропуска для тысяч довольных клиентов, потому
+            действительно можем утверждать,
+            что вместе с нами Вы сможете получить разрешение для своего г рузового автомобиля на въезд в Москву со сто
+            процентной гарантией
+            положительного результата. Даже если перед этим Вы получили отказ.
+          </p>
+          <div class="registration-btn">
+            <a href="#callback" class="registration-btn-link btn _popup-link">Оформить пропуск</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="map" class="map">
+        <div class="map__container _container">
+          <div class="map__text-block">
+            <h2 class="map__title title">Контакты</h2>
+            <ul class="map__list">
+              <li class="map__list-item">ООО "ГК ЦЕНТР СТРАХОВАНИЯ АВТОПРОФИ"</li>
+              <li class="map__list-item">ИНН: 4616009664</li>
+              <li class="map__list-item">ОГРН: 1194632010011</li>
+              <li class="map__list-item">Курская область, Обоянский район, г.Обоянь, ул.Ленина д.98, к.20</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    @@include('_footer.html',{})
+  </div>
+  @@include('_popup.html',{})
+  @@include('_js.html',{})
+</body>
+
+</html>

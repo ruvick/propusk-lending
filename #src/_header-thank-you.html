@@ -1,0 +1,95 @@
+<header id="header" class="header">
+  <div class="header__container _container">
+    <div class="header__navigation d-flex">
+
+      <a href="index.html" class="logo-icon header__logo">
+        <!-- <? bloginfo("url"); ?> -->
+        <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>
+      </a>
+
+      <ul class="menu-list header__menu-list d-flex">
+        <li class="menu-list__item"><a href="#help" class="menu-list__link">Оформить пропуск</a></li>
+        <li class="menu-list__item"><a href="index.html#files" class="menu-list__link">Необходимые документы</a></li>
+        <li class="menu-list__item"><a href="index.html#examination" class="menu-list__link">Проверить пропуск</a></li>
+        <li class="menu-list__item"><a href="#map" class="menu-list__link">Контакты</a></li>
+      </ul>
+      <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
+						'container_class' => 'menu__list','container' => false )); ?>  -->
+      <div class="header__contacts-wrap">
+        <div class="contacts header__contacts d-flex">
+          <a href="tel:88004440274" class="contacts__phone header__phone">8 (800) 444-02-74</a>
+          <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone_1"); ?></a> -->
+          <a href="mailto:propuskmkad-pro@yandex.ru" class="contacts__email header__email">propuskmkad-pro@yandex.ru</a>
+        </div>
+        <a href="#callback" class="header__popup-link _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
+        <a href="tel:88004440274" class="mob-phone-icon header__mob-phone-icon"></a>
+        <!-- <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-callback__phone"></a> -->
+      </div>
+
+      <div class="icon-menu" aria-label="Бургер меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <h1 class="header__title">Благодарим за обращение!</h1>
+    <p class="header__subtitle">Наши менеджеры свяжуться с вами в ближайшее время</p>
+
+    <div class="header__inner d-flex">
+      <div class="header__box">
+        <div class="header__box-nuar_blk nuar_blk"></div>
+        <div class="header__box-sale">АКЦИЯ</div>
+        <h3 class="header__box-title">Пропуск на МКАД</h3>
+        <div class="header__box-inner d-flex">
+          <div class="header__box-price">
+            <p class="header__box-price-new">14 000 руб.</p>
+            <p class="header__box-price-old">20 000 руб.</p>
+          </div>
+          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
+        </div>
+        <p class="header__box-term">на 1 год</p>
+      </div>
+      <div class="header__box">
+        <div class="header__box-nuar_blk nuar_blk"></div>
+        <!-- <div class="header__box-sale">АКЦИЯ</div> -->
+        <h3 class="header__box-title">Пропуск на ТТК</h3>
+        <div class="header__box-inner d-flex">
+          <div class="header__box-price">
+            <p class="header__box-price-new">14 000 руб.</p>
+          </div>
+          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
+        </div>
+        <p class="header__box-term">на 1 год</p>
+      </div>
+      <div class="header__box">
+        <div class="header__box-nuar_blk nuar_blk"></div>
+        <!-- <div class="header__box-sale">АКЦИЯ</div> -->
+        <h3 class="header__box-title">Пропуск на СК</h3>
+        <div class="header__box-inner d-flex">
+          <div class="header__box-price">
+            <p class="header__box-price-new">14 000 руб.</p>
+          </div>
+          <a href="#callback" class="_popup-link btn btn_dark">ЗАКАЗАТЬ</a>
+        </div>
+        <p class="header__box-term">на 1 год</p>
+      </div>
+    </div>
+
+
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mob-menu header__mob-menu">
+  <ul class="mob-menu__list">
+    <li class="mob-menu__item"><a href="#help" class="mob-menu__link">Оформить пропуск</a></li>
+    <li class="mob-menu__item"><a href="index.html#files" class="mob-menu__link">Необходимые документы</a></li>
+    <li class="mob-menu__item"><a href="index.html#examination" class="mob-menu__link">Проверить пропуск</a></li>
+    <li class="mob-menu__item"><a href="#map" class="mob-menu__link">Контакты</a></li>
+  </ul>
+  <!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
+		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
+  <a href="#callback" class="header__popup-link_mob _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
+</div>
