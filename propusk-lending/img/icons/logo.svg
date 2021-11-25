@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="455.4" height="454.8"><g fill-rule="evenodd"><path data-name="Контур 116" d="M0 367.7l455.4-210-254.2 297.1H48.6l345.8-253.7L0 451.3" fill="#fff"/><path data-name="Контур 117" d="M454.7 185v269.7H223.9l58-67.7H387V264.2m67.7-247v121.9L387 170.3V67.8H67.7v249.8L0 348.8V0h454.7z" fill="#ffe800"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="455.4" height="454.8" viewBox="0 0 455.4 454.8">
+  <g id="лого" transform="translate(-132.3 -132.6)">
+    <path id="Контур_116" data-name="Контур 116" d="M132.3,500.3l455.4-210L333.5,587.4H180.9L526.7,333.7,132.3,583.9" fill="#fff" fill-rule="evenodd"/>
+    <path id="Контур_117" data-name="Контур 117" d="M587,317.6V587.3H356.2l58-67.7H519.3V396.8m67.7-247V271.7l-67.7,31.2V200.4H200V450.2l-67.7,31.2V132.6H587Z" fill="#ffe800" fill-rule="evenodd"/>
+  </g>
+</svg>
