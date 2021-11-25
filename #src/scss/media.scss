@@ -144,6 +144,9 @@
 @media (max-width: 830px) {
   .footer__column_btn {
     flex: 0 1 400px;}
+  .popup-arrange__table-wrap,
+  .popup-arrange__form-block {
+    overflow: auto;}
 }
 
 @media (max-width: 812px) {
@@ -348,6 +351,28 @@
     margin-bottom: 25px;}
   .order__inner {
     margin-bottom: 15px;}
+  // .popup-arrange__table-thead-td,
+  // .popup-arrange__table-tbody-td,
+  // .popup-arrange__table {
+  //   display: flex;}
+  // .popup-arrange__table-thead,
+  // .popup-arrange__table-tbody {
+  //   display: flex;
+  //   flex: 0 1 50%;}
+  // .popup-arrange__table-thead-tr,
+  // .popup-arrange__table-tbody-tr {
+  //   flex: 0 1 100%;}
+  // .popup-arrange__table-thead-td {
+  //   border-left: 1px solid #fff;
+  //   border-right: 1px solid #fff;
+  //   &:first-child {
+  //     border-top: 1px solid #fff;}
+  //     &:last-child {
+  //     border-right: 1px solid #fff;}}
+  // .popup-arrange__table-tbody-td {
+  //     &:last-child {
+  //       border-right: 1px solid #fff;
+  //       border-bottom: 1px solid #fff;}}
 }
 
 @media (max-width: 730px) {
@@ -514,6 +539,8 @@
     width: 100%;}
   .registration-btn-link {
     width: 100%;}
+  .popup__form-block h2 {
+    font-size: 28px;}
 }
 
 @media (max-width: 380px) {

@@ -1165,33 +1165,39 @@ body.ie ._ibg img {
   margin-top: 25px;
 }
 
+.popup-arrange .popup__body {
+  max-width: 900px;
+}
+
 .popup-arrange__table {
-  flex-wrap: wrap;
-  margin-bottom: 35px;
-}
-.popup-arrange__table-column {
+  width: 100%;
   color: #fff;
-  border-right: 1px solid #fff;
+  margin-bottom: 30px;
 }
-.popup-arrange__table-column:last-child {
-  border-right: none;
-}
-.popup-arrange__table-column-name {
+.popup-arrange__table-thead {
   text-align: center;
-  padding: 5px 10px;
   background: grey;
 }
-.popup-arrange__table-column-text {
+.popup-arrange__table-thead-td {
   padding: 5px 10px;
-  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.popup-arrange__table-thead-td:last-child {
+  border-right: none;
+}
+.popup-arrange__table-tbody {
   background: green;
 }
-
-.popup-arrange .popup__body {
-  max-width: 880px;
+.popup-arrange__table-tbody-td {
+  padding: 5px 10px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.popup-arrange__table-tbody-td:last-child {
+  border-right: none;
 }
 
-/*Popup-CSS*/
 .header {
   position: relative;
   padding: 40px 0 127px 0;
@@ -2331,6 +2337,11 @@ body.ie ._ibg img {
   .footer__column_btn {
     flex: 0 1 400px;
   }
+
+  .popup-arrange__table-wrap,
+.popup-arrange__form-block {
+    overflow: auto;
+  }
 }
 @media (max-width: 812px) {
   .header {
@@ -2942,6 +2953,10 @@ body.ie ._ibg img {
 
   .registration-btn-link {
     width: 100%;
+  }
+
+  .popup__form-block h2 {
+    font-size: 28px;
   }
 }
 @media (max-width: 380px) {
