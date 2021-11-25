@@ -16,15 +16,30 @@
   <!-- <meta name="robots" content="noindex, nofollow"> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K382J22');</script>
+<!-- End Google Tag Manager -->
+
+
 </head>
 
 <body>
   <div class="wrapper">
-    <header id="header" class="header">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K382J22"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="header" class="header">
   <div class="header__container _container">
     <div class="header__navigation d-flex">
 
-      <a href="index.html" class="logo-icon header__logo">
+      <a href="index.html" class="logo-icon header__logo" id="main_logo">
         <!-- <? bloginfo("url"); ?> -->
         <p class="logo-icon__text">ПРОПУСК В МОСКВУ</p>
       </a>
@@ -356,10 +371,10 @@
                 </div>
                 <form action="#" class="examination__mailing-wrap-form d-flex">
                   <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">
-                    <input autocomplete="off" type="text" name="form[]" data-gzinput="gz2" data-error=""
+                    <input autocomplete="off" type="text" name="numbrp1" data-gzinput="gz2" data-error=""
                       data-value="А 000 АА" class="goz-znak__number input _req input_gz">
                     <div class="goz-znak__region d-flex">
-                      <input autocomplete="off" type="text" name="form[]" data-error="" id="gz2" data-value="000"
+                      <input autocomplete="off" type="text" name="numbrp2" data-error="" id="gz2" data-value="000"
                         class="goz-znak__region-input input _digital _req gz2">
                       <span class="goz-znak__region-icon"></span>
                     </div>
@@ -369,12 +384,12 @@
               </div>
             </div>
             <div class="examination__mailing-column">
-              <form action="#" class="examination__mailing-form">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"
+              <form action="#" class="examination__mailing-form" id = "form_in_foot">
+                <input autocomplete="off" type="text" name="name" data-error="" data-value="Имя"
                   class="examination__mailing-form-input input">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Телефон*"
+                <input autocomplete="off" type="text" name="phone" data-error="" data-value="Телефон*"
                   class="examination__mailing-form-input input _req">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"
+                <input autocomplete="off" type="text" name="mail" data-error="" data-value="Email"
                   class="examination__mailing-form-input input">
                 <label for="check" class="examination__mailing-form-checkbox checkbox">
                   <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"
@@ -384,7 +399,7 @@
                     <span>Я согласен(а) на обработку моих
                       персональных данных</span></span>
                 </label>
-                <button type="submit" class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
+                <button type="submit" class="examination__mailing-form-btn btn _send_btn" data-formid = "form_in_foot" data-msg = "Форма подписки">ОФОРМИТЬ РАССЫЛКУ</button>
               </form>
             </div>
           </div>
@@ -476,18 +491,18 @@
         <div class="popup__form-block">
           <h2>Заказать звонок</h2>
           <p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-          <form action="#" class="form">
+          <form id = "win_form" action="#" class="form">
             <div class="form__line">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
+              <input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля" data-value="Имя"
                 class="popup__form-input input _req">
-              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Телефон" class="popup__form-input input _phone _req">
-              <input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+              <input id="tel2" autocomplete="off" type="text" name="phone" data-error="Заполните поля"
+                data-value="Телефон*" class="popup__form-input input _phone _req">
+              <input id="email" autocomplete="off" type="text" name="mail" data-error="Заполните поля"
                 data-value="Email" class="popup__form-input input _email _req">
             </div>
             <p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
                 конфиденциальности</a></p>
-            <button class="popup__form-btn form__btn btn">Заказать</button>
+            <button class="popup__form-btn form__btn btn _send_btn" data-formid = "win_form" data-msg = "Форма стандартного окна">Заказать</button>
           </form>
         </div>
       </div>
@@ -517,7 +532,7 @@
                   <td class="popup-arrange__table-thead-td">Осталось дней</td>
                 </tr>
               </thead>
-              <tbody class="popup-arrange__table-tbody">
+              <tbody class="popup-arrange__table-tbody" id = "aus_info_body">
                 <tr class="popup-arrange__table-tbody-tr">
                   <td class="popup-arrange__table-tbody-td">КА209МА790</td>
                   <td class="popup-arrange__table-tbody-td">КА209МА790</td>
@@ -530,21 +545,16 @@
             </table>
           </div>
 
-          <h2>Спецпредложение!</h2>
-          <p class="popup__notific">
-            Постоянный пропуск за 14 000р. Гарантия получения 100%. Оставьте заявку до 24 ноября
-            и получите временный пропуск бесплатно
-          </p>
-          <form action="#" class="form">
+          <form action="#" class="form" id = "form_win">
             <div class="form__line">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+              <input id="number_in_win" autocomplete="off" type="text" name="number" data-error="Заполните поля"
                 data-value="Номер" class="popup__form-input input">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Ваше Имя" class="popup__form-input input _req">
-              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Введите телефон" class="popup__form-input input _phone _req">
+              <input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля"
+                data-value="Имя" class="popup__form-input input _req">
+              <input id="tel2" autocomplete="off" type="text" name="phone" data-error="Заполните поля"
+                data-value="Телефон*" class="popup__form-input input _phone _req">
             </div>
-            <button class="popup-arrange__form-btn popup__form-btn form__btn btn">Оставить заявку</button>
+            <button class="popup-arrange__form-btn popup__form-btn form__btn btn _send_btn" data-formid = "form_win" data-msg = "Форма проверки пропуска">Оставить заявку</button>
           </form>
         </div>
       </div>

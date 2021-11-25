@@ -10,18 +10,18 @@
         <div class="popup__form-block">
           <h2>Заказать звонок</h2>
           <p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-          <form action="#" class="form">
+          <form id = "win_form" action="#" class="form">
             <div class="form__line">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
+              <input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля" data-value="Имя"
                 class="popup__form-input input _req">
-              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Телефон" class="popup__form-input input _phone _req">
-              <input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+              <input id="tel2" autocomplete="off" type="text" name="phone" data-error="Заполните поля"
+                data-value="Телефон*" class="popup__form-input input _phone _req">
+              <input id="email" autocomplete="off" type="text" name="mail" data-error="Заполните поля"
                 data-value="Email" class="popup__form-input input _email _req">
             </div>
             <p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
                 конфиденциальности</a></p>
-            <button class="popup__form-btn form__btn btn">Заказать</button>
+            <button class="popup__form-btn form__btn btn _send_btn" data-formid = "win_form" data-msg = "Форма стандартного окна">Заказать</button>
           </form>
         </div>
       </div>
@@ -51,7 +51,7 @@
                   <td class="popup-arrange__table-thead-td">Осталось дней</td>
                 </tr>
               </thead>
-              <tbody class="popup-arrange__table-tbody">
+              <tbody class="popup-arrange__table-tbody" id = "aus_info_body">
                 <tr class="popup-arrange__table-tbody-tr">
                   <td class="popup-arrange__table-tbody-td">КА209МА790</td>
                   <td class="popup-arrange__table-tbody-td">КА209МА790</td>
@@ -64,21 +64,16 @@
             </table>
           </div>
 
-          <h2>Спецпредложение!</h2>
-          <p class="popup__notific">
-            Постоянный пропуск за 14 000р. Гарантия получения 100%. Оставьте заявку до 24 ноября
-            и получите временный пропуск бесплатно
-          </p>
-          <form action="#" class="form">
+          <form action="#" class="form" id = "form_win">
             <div class="form__line">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
+              <input id="number_in_win" autocomplete="off" type="text" name="number" data-error="Заполните поля"
                 data-value="Номер" class="popup__form-input input">
-              <input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Ваше Имя" class="popup__form-input input _req">
-              <input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-                data-value="Введите телефон" class="popup__form-input input _phone _req">
+              <input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля"
+                data-value="Имя" class="popup__form-input input _req">
+              <input id="tel2" autocomplete="off" type="text" name="phone" data-error="Заполните поля"
+                data-value="Телефон*" class="popup__form-input input _phone _req">
             </div>
-            <button class="popup-arrange__form-btn popup__form-btn form__btn btn">Оставить заявку</button>
+            <button class="popup-arrange__form-btn popup__form-btn form__btn btn _send_btn" data-formid = "form_win" data-msg = "Форма проверки пропуска">Оставить заявку</button>
           </form>
         </div>
       </div>

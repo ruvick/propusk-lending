@@ -638,3 +638,58 @@ if (priceSlider) {
 // 		reader.readAsDataURL(file);
 // 	}
 // });
+
+document.addEventListener('DOMContentLoaded', function () { 
+  let send_btns = document.querySelectorAll("._send_btn")
+  send_btns.forEach(element => { 
+    element.onclick = (e) => { 
+      e.preventDefault()
+      let formid = element.dataset.formid;
+      let msg = element.dataset.msg;
+      let form = document.getElementById(formid);
+
+      let name = (form.querySelectorAll("input[name=name]").length == 0)?"":form.querySelectorAll("input[name=name]")[0].value;
+      let tel = (form.querySelectorAll("input[name=phone]").length == 0)?"":form.querySelectorAll("input[name=phone]")[0].value;
+      if (tel == "Телефон*") {form.querySelectorAll("input[name=phone]")[0].classList.add("_error"); return}
+      let mail = (form.querySelectorAll("input[name=mail]").length == 0)?"":form.querySelectorAll("input[name=mail]")[0].value;
+      let number = (form.querySelectorAll("input[name=number]").length == 0)?"":form.querySelectorAll("input[name=number]")[0].value;
+      
+      console.log(name)
+      console.log(tel)
+      console.log(mail)
+      console.log(number)
+      console.log(msg)
+
+      var params = new URLSearchParams() 
+
+		  params.append('name', name)
+		  params.append('tel', tel)
+		  params.append('mail', mail)
+		  params.append('number', number)
+		  params.append('msg', msg)
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onload = function(e) {
+
+            if (xhr.status == 200) {
+        
+                location.href = "/thank-you.html"
+
+            } else {
+                console.log(xhr.status)
+                console.log(xhr.statusText)
+                alert("При отправке произошла ошибка")
+            }
+            
+        }
+        
+        xhr.onerror = function(msg) {
+            console.log("eroroa" + xhr.statusText)
+        }
+
+        xhr.open('POST', "https://propuskmkad-pro.ru/sender.php", true);
+        xhr.send(params);
+    }
+  })
+})

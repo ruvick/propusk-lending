@@ -1171,7 +1171,7 @@ body.ie ._ibg img {
 
 .popup-arrange__table {
   width: 100%;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
 }
 .popup-arrange__table-thead {
@@ -1187,7 +1187,19 @@ body.ie ._ibg img {
   border-right: none;
 }
 .popup-arrange__table-tbody {
-  background: green;
+  background: white;
+}
+.popup-arrange .bg-green {
+  background-color: green;
+}
+.popup-arrange .bg-green td {
+  color: white;
+}
+.popup-arrange .bg-red {
+  background-color: red;
+}
+.popup-arrange .bg-red td {
+  color: white;
 }
 .popup-arrange__table-tbody-td {
   padding: 5px 10px;

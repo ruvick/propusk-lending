@@ -134,7 +134,7 @@
 
   &__table {
     width: 100%;
-    color: #fff;
+    color: #000;
     margin-bottom: 30px;
   }
 
@@ -155,8 +155,24 @@
   }
 
   &__table-tbody {
-    background: green;
+    background: white;
   }
+
+.bg-green {
+	background-color: green;
+}
+
+.bg-green td{ 
+	color:white
+}
+
+.bg-red {
+	background-color: red;
+}
+
+.bg-red td{ 
+	color:white
+}
 
   &__table-tbody-tr {
     

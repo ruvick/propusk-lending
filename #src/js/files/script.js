@@ -1,6 +1,7 @@
 // 'use strict';
-// document.addEventListener('DOMContentLoaded', () => {
-// });
+document.addEventListener('DOMContentLoaded', () => {
+  main_logo.href = document.location.protocol+"//"+document.location.host
+});
 
 
 const iconMenu = document.querySelector(".icon-menu");

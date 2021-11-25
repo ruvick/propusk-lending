@@ -248,10 +248,10 @@
                 </div>
                 <form action="#" class="examination__mailing-wrap-form d-flex">
                   <div class="examination__mailing-wrap-goz-znak goz-znak d-flex">
-                    <input autocomplete="off" type="text" name="form[]" data-gzinput="gz2" data-error=""
+                    <input autocomplete="off" type="text" name="numbrp1" data-gzinput="gz2" data-error=""
                       data-value="А 000 АА" class="goz-znak__number input _req input_gz">
                     <div class="goz-znak__region d-flex">
-                      <input autocomplete="off" type="text" name="form[]" data-error="" id="gz2" data-value="000"
+                      <input autocomplete="off" type="text" name="numbrp2" data-error="" id="gz2" data-value="000"
                         class="goz-znak__region-input input _digital _req gz2">
                       <span class="goz-znak__region-icon"></span>
                     </div>
@@ -261,12 +261,12 @@
               </div>
             </div>
             <div class="examination__mailing-column">
-              <form action="#" class="examination__mailing-form">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Имя"
+              <form action="#" class="examination__mailing-form" id = "form_in_foot">
+                <input autocomplete="off" type="text" name="name" data-error="" data-value="Имя"
                   class="examination__mailing-form-input input">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Телефон*"
+                <input autocomplete="off" type="text" name="phone" data-error="" data-value="Телефон*"
                   class="examination__mailing-form-input input _req">
-                <input autocomplete="off" type="text" name="form[]" data-error="" data-value="Email"
+                <input autocomplete="off" type="text" name="mail" data-error="" data-value="Email"
                   class="examination__mailing-form-input input">
                 <label for="check" class="examination__mailing-form-checkbox checkbox">
                   <input id="check" data-error="Ошибка" class="checkbox__input" checked type="checkbox" value="1"
@@ -276,7 +276,7 @@
                     <span>Я согласен(а) на обработку моих
                       персональных данных</span></span>
                 </label>
-                <button type="submit" class="examination__mailing-form-btn btn">ОФОРМИТЬ РАССЫЛКУ</button>
+                <button type="submit" class="examination__mailing-form-btn btn _send_btn" data-formid = "form_in_foot" data-msg = "Форма подписки">ОФОРМИТЬ РАССЫЛКУ</button>
               </form>
             </div>
           </div>
