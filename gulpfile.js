@@ -269,32 +269,32 @@ function htmlBuild() {
 		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(webphtml())
-		.pipe(version({
-			'value': '%DT%',
-			'replaces': [
-				'#{VERSION_REPlACE}#',
-				[/#{VERSION_REPlACE}#/g, '%TS%']
-			],
-			'append': {
-				'key': '_v',
-				'cover': 0,
-				'to': [
-					'css',
-					['image', '%TS%'],
-					{
-						'type': 'js',
-						'attr': ['src', 'custom-src'], // String or Array, undefined this will use default. css: "href", js: ...
-						'key': '_v',
-						'value': '%DT%',
-						'cover': 1,
-						'files': ['app.min.js', 'vendors.min.js'] // Array [{String|Regex}] of explicit files to append to
-					}
-				]
-			},
-			'output': {
-				'file': 'version.json'
-			}
-		}))
+		// .pipe(version({
+		// 	'value': '%DT%',
+		// 	'replaces': [
+		// 		'#{VERSION_REPlACE}#',
+		// 		[/#{VERSION_REPlACE}#/g, '%TS%']
+		// 	],
+		// 	'append': {
+		// 		'key': '_v',
+		// 		'cover': 0,
+		// 		'to': [
+		// 			'css',
+		// 			['image', '%TS%'],
+		// 			{
+		// 				'type': 'js',
+		// 				'attr': ['src', 'custom-src'], // String or Array, undefined this will use default. css: "href", js: ...
+		// 				'key': '_v',
+		// 				'value': '%DT%',
+		// 				'cover': 1,
+		// 				'files': ['app.min.js', 'vendors.min.js'] // Array [{String|Regex}] of explicit files to append to
+		// 			}
+		// 		]
+		// 	},
+		// 	'output': {
+		// 		'file': 'version.json'
+		// 	}
+		// }))
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
