@@ -9,7 +9,7 @@ define('TELEGRAM_TOKEN_TO', '5174947430:AAGRwIsyVi3mfoAWZ_H0JQkVpPzD6SC4SFw');
 
 function message_to_telegram($text)
 {
-	$arr_chat = "381762556,57815731";
+	$arr_chat = "381762556,57815731,931560104";
 	if($arr_chat) {
 		$arr_chat = explode(",",$arr_chat);
 	    $ch = curl_init();
